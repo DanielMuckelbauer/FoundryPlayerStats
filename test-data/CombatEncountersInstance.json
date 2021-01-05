@@ -1,0 +1,3080 @@
+{
+    "_source": [
+        {
+            "_id": "By2blJbXfG5nUx2J",
+            "permission": {
+                "default": 0,
+                "kBTmFuWzwEVmey9R": 3
+            },
+            "sort": 100001,
+            "flags": {},
+            "scene": "CZUqN3uSbHzEAEVV",
+            "combatants": [
+                {
+                    "_id": "EVfNRgc0BXFOe5j8",
+                    "flags": {},
+                    "tokenId": "uKZ8tn1SM9zZFEqG",
+                    "initiative": 13,
+                    "hidden": false,
+                    "token": {
+                        "_id": "uKZ8tn1SM9zZFEqG",
+                        "flags": {},
+                        "name": "Player1",
+                        "displayName": 0,
+                        "img": "icons/svg/mystery-man.svg",
+                        "tint": null,
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 1400,
+                        "y": 1000,
+                        "elevation": 0,
+                        "lockRotation": false,
+                        "rotation": 0,
+                        "effects": [],
+                        "hidden": false,
+                        "vision": true,
+                        "dimSight": 30,
+                        "brightSight": 0,
+                        "dimLight": 0,
+                        "brightLight": 0,
+                        "sightAngle": 360,
+                        "lightAngle": 360,
+                        "lightAlpha": 1,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorId": "mRnnkAe6aTbLnnk6",
+                        "actorLink": true,
+                        "actorData": {},
+                        "disposition": 1,
+                        "displayBars": 0,
+                        "bar1": {},
+                        "bar2": {}
+                    },
+                    "actor": {
+                        "_id": "mRnnkAe6aTbLnnk6",
+                        "name": "Player1",
+                        "permission": {
+                            "default": 0,
+                            "kBTmFuWzwEVmey9R": 3
+                        },
+                        "type": "character",
+                        "data": {
+                            "abilities": {
+                                "str": {
+                                    "value": 10,
+                                    "proficient": 0
+                                },
+                                "dex": {
+                                    "value": 10,
+                                    "proficient": 0
+                                },
+                                "con": {
+                                    "value": 10,
+                                    "proficient": 0
+                                },
+                                "int": {
+                                    "value": 10,
+                                    "proficient": 0
+                                },
+                                "wis": {
+                                    "value": 10,
+                                    "proficient": 0
+                                },
+                                "cha": {
+                                    "value": 10,
+                                    "proficient": 0
+                                }
+                            },
+                            "attributes": {
+                                "ac": {
+                                    "value": 10
+                                },
+                                "hp": {
+                                    "value": 10,
+                                    "min": 0,
+                                    "max": 10,
+                                    "temp": null,
+                                    "tempmax": null
+                                },
+                                "init": {
+                                    "value": 0,
+                                    "bonus": 0
+                                },
+                                "movement": {
+                                    "burrow": 0,
+                                    "climb": 0,
+                                    "fly": 0,
+                                    "swim": 0,
+                                    "walk": 30,
+                                    "units": "ft",
+                                    "hover": false
+                                },
+                                "senses": {
+                                    "darkvision": 0,
+                                    "blindsight": 0,
+                                    "tremorsense": 0,
+                                    "truesight": 0,
+                                    "units": "ft",
+                                    "special": ""
+                                },
+                                "spellcasting": "int",
+                                "death": {
+                                    "success": 0,
+                                    "failure": 0
+                                },
+                                "encumbrance": {
+                                    "value": null,
+                                    "max": null
+                                },
+                                "exhaustion": 0,
+                                "inspiration": false
+                            },
+                            "details": {
+                                "biography": {
+                                    "value": "",
+                                    "public": ""
+                                },
+                                "alignment": "",
+                                "race": "",
+                                "background": "",
+                                "xp": {
+                                    "value": 0,
+                                    "min": 0,
+                                    "max": 300
+                                },
+                                "appearance": "",
+                                "trait": "",
+                                "ideal": "",
+                                "bond": "",
+                                "flaw": ""
+                            },
+                            "traits": {
+                                "size": "med",
+                                "di": {
+                                    "value": [],
+                                    "custom": ""
+                                },
+                                "dr": {
+                                    "value": [],
+                                    "custom": ""
+                                },
+                                "dv": {
+                                    "value": [],
+                                    "custom": ""
+                                },
+                                "ci": {
+                                    "value": [],
+                                    "custom": ""
+                                },
+                                "languages": {
+                                    "value": [],
+                                    "custom": ""
+                                },
+                                "weaponProf": {
+                                    "value": [],
+                                    "custom": ""
+                                },
+                                "armorProf": {
+                                    "value": [],
+                                    "custom": ""
+                                },
+                                "toolProf": {
+                                    "value": [],
+                                    "custom": ""
+                                }
+                            },
+                            "currency": {
+                                "pp": 0,
+                                "gp": 0,
+                                "ep": 0,
+                                "sp": 0,
+                                "cp": 0
+                            },
+                            "skills": {
+                                "acr": {
+                                    "value": 0,
+                                    "ability": "dex"
+                                },
+                                "ani": {
+                                    "value": 0,
+                                    "ability": "wis"
+                                },
+                                "arc": {
+                                    "value": 0,
+                                    "ability": "int"
+                                },
+                                "ath": {
+                                    "value": 0,
+                                    "ability": "str"
+                                },
+                                "dec": {
+                                    "value": 0,
+                                    "ability": "cha"
+                                },
+                                "his": {
+                                    "value": 0,
+                                    "ability": "int"
+                                },
+                                "ins": {
+                                    "value": 0,
+                                    "ability": "wis"
+                                },
+                                "itm": {
+                                    "value": 0,
+                                    "ability": "cha"
+                                },
+                                "inv": {
+                                    "value": 0,
+                                    "ability": "int"
+                                },
+                                "med": {
+                                    "value": 0,
+                                    "ability": "wis"
+                                },
+                                "nat": {
+                                    "value": 0,
+                                    "ability": "int"
+                                },
+                                "prc": {
+                                    "value": 0,
+                                    "ability": "wis"
+                                },
+                                "prf": {
+                                    "value": 0,
+                                    "ability": "cha"
+                                },
+                                "per": {
+                                    "value": 0,
+                                    "ability": "cha"
+                                },
+                                "rel": {
+                                    "value": 0,
+                                    "ability": "int"
+                                },
+                                "slt": {
+                                    "value": 0,
+                                    "ability": "dex"
+                                },
+                                "ste": {
+                                    "value": 0,
+                                    "ability": "dex"
+                                },
+                                "sur": {
+                                    "value": 0,
+                                    "ability": "wis"
+                                }
+                            },
+                            "spells": {
+                                "spell1": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell2": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell3": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell4": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell5": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell6": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell7": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell8": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell9": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "pact": {
+                                    "value": 0,
+                                    "override": null
+                                }
+                            },
+                            "bonuses": {
+                                "mwak": {
+                                    "attack": "",
+                                    "damage": ""
+                                },
+                                "rwak": {
+                                    "attack": "",
+                                    "damage": ""
+                                },
+                                "msak": {
+                                    "attack": "",
+                                    "damage": ""
+                                },
+                                "rsak": {
+                                    "attack": "",
+                                    "damage": ""
+                                },
+                                "abilities": {
+                                    "check": "",
+                                    "save": "",
+                                    "skill": ""
+                                },
+                                "spell": {
+                                    "dc": ""
+                                }
+                            },
+                            "resources": {
+                                "primary": {
+                                    "value": null,
+                                    "max": null,
+                                    "sr": false,
+                                    "lr": false,
+                                    "label": ""
+                                },
+                                "secondary": {
+                                    "value": null,
+                                    "max": null,
+                                    "sr": false,
+                                    "lr": false,
+                                    "label": ""
+                                },
+                                "tertiary": {
+                                    "value": null,
+                                    "max": null,
+                                    "sr": false,
+                                    "lr": false,
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "sort": 100001,
+                        "flags": {},
+                        "token": {
+                            "flags": {},
+                            "name": "Player1",
+                            "displayName": 0,
+                            "img": "icons/svg/mystery-man.svg",
+                            "tint": null,
+                            "width": 1,
+                            "height": 1,
+                            "scale": 1,
+                            "lockRotation": false,
+                            "rotation": 0,
+                            "vision": true,
+                            "dimSight": 30,
+                            "brightSight": 0,
+                            "dimLight": 0,
+                            "brightLight": 0,
+                            "sightAngle": 360,
+                            "lightAngle": 360,
+                            "lightAlpha": 1,
+                            "lightAnimation": {
+                                "speed": 5,
+                                "intensity": 5
+                            },
+                            "actorId": "mRnnkAe6aTbLnnk6",
+                            "actorLink": true,
+                            "disposition": 1,
+                            "displayBars": 0,
+                            "bar1": {},
+                            "bar2": {},
+                            "randomImg": false
+                        },
+                        "items": [],
+                        "effects": []
+                    },
+                    "name": "Player1",
+                    "permission": 3,
+                    "players": [],
+                    "owner": true,
+                    "img": "icons/svg/mystery-man.svg",
+                    "visible": true
+                },
+                {
+                    "_id": "UeEE2l6GAd9uWf56",
+                    "flags": {},
+                    "tokenId": "s9foAxri4wQDDO9t",
+                    "initiative": 10,
+                    "hidden": false,
+                    "token": {
+                        "_id": "s9foAxri4wQDDO9t",
+                        "flags": {},
+                        "name": "Player2",
+                        "displayName": 0,
+                        "img": "icons/svg/mystery-man.svg",
+                        "tint": null,
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 1600,
+                        "y": 1000,
+                        "elevation": 0,
+                        "lockRotation": false,
+                        "rotation": 0,
+                        "effects": [],
+                        "hidden": false,
+                        "vision": true,
+                        "dimSight": 30,
+                        "brightSight": 0,
+                        "dimLight": 0,
+                        "brightLight": 0,
+                        "sightAngle": 360,
+                        "lightAngle": 360,
+                        "lightAlpha": 1,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorId": "q28otsmmO5i8yMsU",
+                        "actorLink": true,
+                        "actorData": {},
+                        "disposition": 1,
+                        "displayBars": 0,
+                        "bar1": {},
+                        "bar2": {}
+                    },
+                    "actor": {
+                        "_id": "q28otsmmO5i8yMsU",
+                        "name": "Player2",
+                        "permission": {
+                            "default": 0,
+                            "kBTmFuWzwEVmey9R": 3
+                        },
+                        "type": "character",
+                        "data": {
+                            "abilities": {
+                                "str": {
+                                    "value": 10,
+                                    "proficient": 0
+                                },
+                                "dex": {
+                                    "value": 10,
+                                    "proficient": 0
+                                },
+                                "con": {
+                                    "value": 10,
+                                    "proficient": 0
+                                },
+                                "int": {
+                                    "value": 10,
+                                    "proficient": 0
+                                },
+                                "wis": {
+                                    "value": 10,
+                                    "proficient": 0
+                                },
+                                "cha": {
+                                    "value": 10,
+                                    "proficient": 0
+                                }
+                            },
+                            "attributes": {
+                                "ac": {
+                                    "value": 10
+                                },
+                                "hp": {
+                                    "value": 10,
+                                    "min": 0,
+                                    "max": 10,
+                                    "temp": null,
+                                    "tempmax": null
+                                },
+                                "init": {
+                                    "value": 0,
+                                    "bonus": 0
+                                },
+                                "movement": {
+                                    "burrow": 0,
+                                    "climb": 0,
+                                    "fly": 0,
+                                    "swim": 0,
+                                    "walk": 30,
+                                    "units": "ft",
+                                    "hover": false
+                                },
+                                "senses": {
+                                    "darkvision": 0,
+                                    "blindsight": 0,
+                                    "tremorsense": 0,
+                                    "truesight": 0,
+                                    "units": "ft",
+                                    "special": ""
+                                },
+                                "spellcasting": "int",
+                                "death": {
+                                    "success": 0,
+                                    "failure": 0
+                                },
+                                "encumbrance": {
+                                    "value": null,
+                                    "max": null
+                                },
+                                "exhaustion": 0,
+                                "inspiration": false
+                            },
+                            "details": {
+                                "biography": {
+                                    "value": "",
+                                    "public": ""
+                                },
+                                "alignment": "",
+                                "race": "",
+                                "background": "",
+                                "xp": {
+                                    "value": 0,
+                                    "min": 0,
+                                    "max": 300
+                                },
+                                "appearance": "",
+                                "trait": "",
+                                "ideal": "",
+                                "bond": "",
+                                "flaw": ""
+                            },
+                            "traits": {
+                                "size": "med",
+                                "di": {
+                                    "value": [],
+                                    "custom": ""
+                                },
+                                "dr": {
+                                    "value": [],
+                                    "custom": ""
+                                },
+                                "dv": {
+                                    "value": [],
+                                    "custom": ""
+                                },
+                                "ci": {
+                                    "value": [],
+                                    "custom": ""
+                                },
+                                "languages": {
+                                    "value": [],
+                                    "custom": ""
+                                },
+                                "weaponProf": {
+                                    "value": [],
+                                    "custom": ""
+                                },
+                                "armorProf": {
+                                    "value": [],
+                                    "custom": ""
+                                },
+                                "toolProf": {
+                                    "value": [],
+                                    "custom": ""
+                                }
+                            },
+                            "currency": {
+                                "pp": 0,
+                                "gp": 0,
+                                "ep": 0,
+                                "sp": 0,
+                                "cp": 0
+                            },
+                            "skills": {
+                                "acr": {
+                                    "value": 0,
+                                    "ability": "dex"
+                                },
+                                "ani": {
+                                    "value": 0,
+                                    "ability": "wis"
+                                },
+                                "arc": {
+                                    "value": 0,
+                                    "ability": "int"
+                                },
+                                "ath": {
+                                    "value": 0,
+                                    "ability": "str"
+                                },
+                                "dec": {
+                                    "value": 0,
+                                    "ability": "cha"
+                                },
+                                "his": {
+                                    "value": 0,
+                                    "ability": "int"
+                                },
+                                "ins": {
+                                    "value": 0,
+                                    "ability": "wis"
+                                },
+                                "itm": {
+                                    "value": 0,
+                                    "ability": "cha"
+                                },
+                                "inv": {
+                                    "value": 0,
+                                    "ability": "int"
+                                },
+                                "med": {
+                                    "value": 0,
+                                    "ability": "wis"
+                                },
+                                "nat": {
+                                    "value": 0,
+                                    "ability": "int"
+                                },
+                                "prc": {
+                                    "value": 0,
+                                    "ability": "wis"
+                                },
+                                "prf": {
+                                    "value": 0,
+                                    "ability": "cha"
+                                },
+                                "per": {
+                                    "value": 0,
+                                    "ability": "cha"
+                                },
+                                "rel": {
+                                    "value": 0,
+                                    "ability": "int"
+                                },
+                                "slt": {
+                                    "value": 0,
+                                    "ability": "dex"
+                                },
+                                "ste": {
+                                    "value": 0,
+                                    "ability": "dex"
+                                },
+                                "sur": {
+                                    "value": 0,
+                                    "ability": "wis"
+                                }
+                            },
+                            "spells": {
+                                "spell1": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell2": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell3": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell4": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell5": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell6": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell7": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell8": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell9": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "pact": {
+                                    "value": 0,
+                                    "override": null
+                                }
+                            },
+                            "bonuses": {
+                                "mwak": {
+                                    "attack": "",
+                                    "damage": ""
+                                },
+                                "rwak": {
+                                    "attack": "",
+                                    "damage": ""
+                                },
+                                "msak": {
+                                    "attack": "",
+                                    "damage": ""
+                                },
+                                "rsak": {
+                                    "attack": "",
+                                    "damage": ""
+                                },
+                                "abilities": {
+                                    "check": "",
+                                    "save": "",
+                                    "skill": ""
+                                },
+                                "spell": {
+                                    "dc": ""
+                                }
+                            },
+                            "resources": {
+                                "primary": {
+                                    "value": null,
+                                    "max": null,
+                                    "sr": false,
+                                    "lr": false,
+                                    "label": ""
+                                },
+                                "secondary": {
+                                    "value": null,
+                                    "max": null,
+                                    "sr": false,
+                                    "lr": false,
+                                    "label": ""
+                                },
+                                "tertiary": {
+                                    "value": null,
+                                    "max": null,
+                                    "sr": false,
+                                    "lr": false,
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "sort": 100001,
+                        "flags": {},
+                        "token": {
+                            "flags": {},
+                            "name": "Player2",
+                            "displayName": 0,
+                            "img": "icons/svg/mystery-man.svg",
+                            "tint": null,
+                            "width": 1,
+                            "height": 1,
+                            "scale": 1,
+                            "lockRotation": false,
+                            "rotation": 0,
+                            "vision": true,
+                            "dimSight": 30,
+                            "brightSight": 0,
+                            "dimLight": 0,
+                            "brightLight": 0,
+                            "sightAngle": 360,
+                            "lightAngle": 360,
+                            "lightAlpha": 1,
+                            "lightAnimation": {
+                                "speed": 5,
+                                "intensity": 5
+                            },
+                            "actorId": "q28otsmmO5i8yMsU",
+                            "actorLink": true,
+                            "disposition": 1,
+                            "displayBars": 0,
+                            "bar1": {},
+                            "bar2": {},
+                            "randomImg": false
+                        },
+                        "items": [],
+                        "effects": []
+                    },
+                    "name": "Player2",
+                    "permission": 3,
+                    "players": [],
+                    "owner": true,
+                    "img": "icons/svg/mystery-man.svg",
+                    "visible": true
+                },
+                {
+                    "_id": "Pcvm6IfAuaFOOlNt",
+                    "flags": {},
+                    "tokenId": "bOqV86PyLp5uhl2S",
+                    "initiative": 9,
+                    "hidden": false,
+                    "token": {
+                        "_id": "bOqV86PyLp5uhl2S",
+                        "flags": {},
+                        "name": "Enemy1",
+                        "displayName": 0,
+                        "img": "icons/svg/mystery-man.svg",
+                        "tint": null,
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 1400,
+                        "y": 1200,
+                        "elevation": 0,
+                        "lockRotation": false,
+                        "rotation": 0,
+                        "effects": [],
+                        "hidden": false,
+                        "vision": false,
+                        "dimSight": 0,
+                        "brightSight": 0,
+                        "dimLight": 0,
+                        "brightLight": 0,
+                        "sightAngle": 360,
+                        "lightAngle": 360,
+                        "lightAlpha": 1,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorId": "FYHM2afmu025pA1Q",
+                        "actorLink": false,
+                        "actorData": {},
+                        "disposition": -1,
+                        "displayBars": 0,
+                        "bar1": {},
+                        "bar2": {}
+                    },
+                    "actor": {
+                        "_id": "FYHM2afmu025pA1Q",
+                        "name": "Enemy1",
+                        "permission": {
+                            "default": 0,
+                            "kBTmFuWzwEVmey9R": 3
+                        },
+                        "type": "npc",
+                        "data": {
+                            "abilities": {
+                                "str": {
+                                    "value": 10,
+                                    "proficient": 0
+                                },
+                                "dex": {
+                                    "value": 10,
+                                    "proficient": 0
+                                },
+                                "con": {
+                                    "value": 10,
+                                    "proficient": 0
+                                },
+                                "int": {
+                                    "value": 10,
+                                    "proficient": 0
+                                },
+                                "wis": {
+                                    "value": 10,
+                                    "proficient": 0
+                                },
+                                "cha": {
+                                    "value": 10,
+                                    "proficient": 0
+                                }
+                            },
+                            "attributes": {
+                                "ac": {
+                                    "value": 10
+                                },
+                                "hp": {
+                                    "value": 10,
+                                    "min": 0,
+                                    "max": 10,
+                                    "temp": 0,
+                                    "tempmax": 0,
+                                    "formula": ""
+                                },
+                                "init": {
+                                    "value": 0,
+                                    "bonus": 0
+                                },
+                                "movement": {
+                                    "burrow": 0,
+                                    "climb": 0,
+                                    "fly": 0,
+                                    "swim": 0,
+                                    "walk": 30,
+                                    "units": "ft",
+                                    "hover": false
+                                },
+                                "senses": {
+                                    "darkvision": 0,
+                                    "blindsight": 0,
+                                    "tremorsense": 0,
+                                    "truesight": 0,
+                                    "units": "ft",
+                                    "special": ""
+                                },
+                                "spellcasting": "int"
+                            },
+                            "details": {
+                                "biography": {
+                                    "value": "",
+                                    "public": ""
+                                },
+                                "alignment": "",
+                                "race": "",
+                                "type": "",
+                                "environment": "",
+                                "cr": 1,
+                                "spellLevel": 0,
+                                "xp": {
+                                    "value": 10
+                                },
+                                "source": ""
+                            },
+                            "traits": {
+                                "size": "med",
+                                "di": {
+                                    "value": [],
+                                    "custom": ""
+                                },
+                                "dr": {
+                                    "value": [],
+                                    "custom": ""
+                                },
+                                "dv": {
+                                    "value": [],
+                                    "custom": ""
+                                },
+                                "ci": {
+                                    "value": [],
+                                    "custom": ""
+                                },
+                                "languages": {
+                                    "value": [],
+                                    "custom": ""
+                                }
+                            },
+                            "currency": {
+                                "pp": 0,
+                                "gp": 0,
+                                "ep": 0,
+                                "sp": 0,
+                                "cp": 0
+                            },
+                            "skills": {
+                                "acr": {
+                                    "value": 0,
+                                    "ability": "dex"
+                                },
+                                "ani": {
+                                    "value": 0,
+                                    "ability": "wis"
+                                },
+                                "arc": {
+                                    "value": 0,
+                                    "ability": "int"
+                                },
+                                "ath": {
+                                    "value": 0,
+                                    "ability": "str"
+                                },
+                                "dec": {
+                                    "value": 0,
+                                    "ability": "cha"
+                                },
+                                "his": {
+                                    "value": 0,
+                                    "ability": "int"
+                                },
+                                "ins": {
+                                    "value": 0,
+                                    "ability": "wis"
+                                },
+                                "itm": {
+                                    "value": 0,
+                                    "ability": "cha"
+                                },
+                                "inv": {
+                                    "value": 0,
+                                    "ability": "int"
+                                },
+                                "med": {
+                                    "value": 0,
+                                    "ability": "wis"
+                                },
+                                "nat": {
+                                    "value": 0,
+                                    "ability": "int"
+                                },
+                                "prc": {
+                                    "value": 0,
+                                    "ability": "wis"
+                                },
+                                "prf": {
+                                    "value": 0,
+                                    "ability": "cha"
+                                },
+                                "per": {
+                                    "value": 0,
+                                    "ability": "cha"
+                                },
+                                "rel": {
+                                    "value": 0,
+                                    "ability": "int"
+                                },
+                                "slt": {
+                                    "value": 0,
+                                    "ability": "dex"
+                                },
+                                "ste": {
+                                    "value": 0,
+                                    "ability": "dex"
+                                },
+                                "sur": {
+                                    "value": 0,
+                                    "ability": "wis"
+                                }
+                            },
+                            "spells": {
+                                "spell1": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell2": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell3": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell4": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell5": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell6": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell7": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell8": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell9": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "pact": {
+                                    "value": 0,
+                                    "override": null
+                                }
+                            },
+                            "bonuses": {
+                                "mwak": {
+                                    "attack": "",
+                                    "damage": ""
+                                },
+                                "rwak": {
+                                    "attack": "",
+                                    "damage": ""
+                                },
+                                "msak": {
+                                    "attack": "",
+                                    "damage": ""
+                                },
+                                "rsak": {
+                                    "attack": "",
+                                    "damage": ""
+                                },
+                                "abilities": {
+                                    "check": "",
+                                    "save": "",
+                                    "skill": ""
+                                },
+                                "spell": {
+                                    "dc": ""
+                                }
+                            },
+                            "resources": {
+                                "legact": {
+                                    "value": 0,
+                                    "max": 0
+                                },
+                                "legres": {
+                                    "value": 0,
+                                    "max": 0
+                                },
+                                "lair": {
+                                    "value": false,
+                                    "initiative": 0
+                                }
+                            }
+                        },
+                        "sort": 100001,
+                        "flags": {},
+                        "token": {
+                            "flags": {},
+                            "name": "Enemy1",
+                            "displayName": 0,
+                            "img": "icons/svg/mystery-man.svg",
+                            "tint": null,
+                            "width": 1,
+                            "height": 1,
+                            "scale": 1,
+                            "lockRotation": false,
+                            "rotation": 0,
+                            "vision": false,
+                            "dimSight": 0,
+                            "brightSight": 0,
+                            "dimLight": 0,
+                            "brightLight": 0,
+                            "sightAngle": 360,
+                            "lightAngle": 360,
+                            "lightAlpha": 1,
+                            "lightAnimation": {
+                                "speed": 5,
+                                "intensity": 5
+                            },
+                            "actorId": "FYHM2afmu025pA1Q",
+                            "actorLink": false,
+                            "disposition": -1,
+                            "displayBars": 0,
+                            "bar1": {},
+                            "bar2": {},
+                            "randomImg": false
+                        },
+                        "items": [],
+                        "effects": []
+                    },
+                    "name": "Enemy1",
+                    "permission": 3,
+                    "players": [],
+                    "owner": true,
+                    "img": "icons/svg/mystery-man.svg",
+                    "visible": true
+                },
+                {
+                    "_id": "EwmoU1CZx9xPVwOD",
+                    "flags": {},
+                    "tokenId": "viPhaN1Xq1LBq1xi",
+                    "initiative": 4,
+                    "hidden": false,
+                    "token": {
+                        "_id": "viPhaN1Xq1LBq1xi",
+                        "flags": {},
+                        "name": "Enemy1",
+                        "displayName": 0,
+                        "img": "icons/svg/mystery-man.svg",
+                        "tint": null,
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 1600,
+                        "y": 1200,
+                        "elevation": 0,
+                        "lockRotation": false,
+                        "rotation": 0,
+                        "effects": [],
+                        "hidden": false,
+                        "vision": false,
+                        "dimSight": 0,
+                        "brightSight": 0,
+                        "dimLight": 0,
+                        "brightLight": 0,
+                        "sightAngle": 360,
+                        "lightAngle": 360,
+                        "lightAlpha": 1,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorId": "EhphHK2C8xDlI2qx",
+                        "actorLink": false,
+                        "actorData": {},
+                        "disposition": -1,
+                        "displayBars": 0,
+                        "bar1": {},
+                        "bar2": {}
+                    },
+                    "actor": {
+                        "_id": "EhphHK2C8xDlI2qx",
+                        "name": "Enemy2",
+                        "permission": {
+                            "default": 0,
+                            "kBTmFuWzwEVmey9R": 3
+                        },
+                        "type": "npc",
+                        "data": {
+                            "abilities": {
+                                "str": {
+                                    "value": 10,
+                                    "proficient": 0
+                                },
+                                "dex": {
+                                    "value": 10,
+                                    "proficient": 0
+                                },
+                                "con": {
+                                    "value": 10,
+                                    "proficient": 0
+                                },
+                                "int": {
+                                    "value": 10,
+                                    "proficient": 0
+                                },
+                                "wis": {
+                                    "value": 10,
+                                    "proficient": 0
+                                },
+                                "cha": {
+                                    "value": 10,
+                                    "proficient": 0
+                                }
+                            },
+                            "attributes": {
+                                "ac": {
+                                    "value": 10
+                                },
+                                "hp": {
+                                    "value": 10,
+                                    "min": 0,
+                                    "max": 10,
+                                    "temp": 0,
+                                    "tempmax": 0,
+                                    "formula": ""
+                                },
+                                "init": {
+                                    "value": 0,
+                                    "bonus": 0
+                                },
+                                "movement": {
+                                    "burrow": 0,
+                                    "climb": 0,
+                                    "fly": 0,
+                                    "swim": 0,
+                                    "walk": 30,
+                                    "units": "ft",
+                                    "hover": false
+                                },
+                                "senses": {
+                                    "darkvision": 0,
+                                    "blindsight": 0,
+                                    "tremorsense": 0,
+                                    "truesight": 0,
+                                    "units": "ft",
+                                    "special": ""
+                                },
+                                "spellcasting": "int"
+                            },
+                            "details": {
+                                "biography": {
+                                    "value": "",
+                                    "public": ""
+                                },
+                                "alignment": "",
+                                "race": "",
+                                "type": "",
+                                "environment": "",
+                                "cr": 1,
+                                "spellLevel": 0,
+                                "xp": {
+                                    "value": 10
+                                },
+                                "source": ""
+                            },
+                            "traits": {
+                                "size": "med",
+                                "di": {
+                                    "value": [],
+                                    "custom": ""
+                                },
+                                "dr": {
+                                    "value": [],
+                                    "custom": ""
+                                },
+                                "dv": {
+                                    "value": [],
+                                    "custom": ""
+                                },
+                                "ci": {
+                                    "value": [],
+                                    "custom": ""
+                                },
+                                "languages": {
+                                    "value": [],
+                                    "custom": ""
+                                }
+                            },
+                            "currency": {
+                                "pp": 0,
+                                "gp": 0,
+                                "ep": 0,
+                                "sp": 0,
+                                "cp": 0
+                            },
+                            "skills": {
+                                "acr": {
+                                    "value": 0,
+                                    "ability": "dex"
+                                },
+                                "ani": {
+                                    "value": 0,
+                                    "ability": "wis"
+                                },
+                                "arc": {
+                                    "value": 0,
+                                    "ability": "int"
+                                },
+                                "ath": {
+                                    "value": 0,
+                                    "ability": "str"
+                                },
+                                "dec": {
+                                    "value": 0,
+                                    "ability": "cha"
+                                },
+                                "his": {
+                                    "value": 0,
+                                    "ability": "int"
+                                },
+                                "ins": {
+                                    "value": 0,
+                                    "ability": "wis"
+                                },
+                                "itm": {
+                                    "value": 0,
+                                    "ability": "cha"
+                                },
+                                "inv": {
+                                    "value": 0,
+                                    "ability": "int"
+                                },
+                                "med": {
+                                    "value": 0,
+                                    "ability": "wis"
+                                },
+                                "nat": {
+                                    "value": 0,
+                                    "ability": "int"
+                                },
+                                "prc": {
+                                    "value": 0,
+                                    "ability": "wis"
+                                },
+                                "prf": {
+                                    "value": 0,
+                                    "ability": "cha"
+                                },
+                                "per": {
+                                    "value": 0,
+                                    "ability": "cha"
+                                },
+                                "rel": {
+                                    "value": 0,
+                                    "ability": "int"
+                                },
+                                "slt": {
+                                    "value": 0,
+                                    "ability": "dex"
+                                },
+                                "ste": {
+                                    "value": 0,
+                                    "ability": "dex"
+                                },
+                                "sur": {
+                                    "value": 0,
+                                    "ability": "wis"
+                                }
+                            },
+                            "spells": {
+                                "spell1": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell2": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell3": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell4": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell5": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell6": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell7": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell8": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "spell9": {
+                                    "value": 0,
+                                    "override": null
+                                },
+                                "pact": {
+                                    "value": 0,
+                                    "override": null
+                                }
+                            },
+                            "bonuses": {
+                                "mwak": {
+                                    "attack": "",
+                                    "damage": ""
+                                },
+                                "rwak": {
+                                    "attack": "",
+                                    "damage": ""
+                                },
+                                "msak": {
+                                    "attack": "",
+                                    "damage": ""
+                                },
+                                "rsak": {
+                                    "attack": "",
+                                    "damage": ""
+                                },
+                                "abilities": {
+                                    "check": "",
+                                    "save": "",
+                                    "skill": ""
+                                },
+                                "spell": {
+                                    "dc": ""
+                                }
+                            },
+                            "resources": {
+                                "legact": {
+                                    "value": 0,
+                                    "max": 0
+                                },
+                                "legres": {
+                                    "value": 0,
+                                    "max": 0
+                                },
+                                "lair": {
+                                    "value": false,
+                                    "initiative": 0
+                                }
+                            }
+                        },
+                        "sort": 100001,
+                        "flags": {},
+                        "token": {
+                            "flags": {},
+                            "name": "Enemy1",
+                            "displayName": 0,
+                            "img": "icons/svg/mystery-man.svg",
+                            "tint": null,
+                            "width": 1,
+                            "height": 1,
+                            "scale": 1,
+                            "lockRotation": false,
+                            "rotation": 0,
+                            "vision": false,
+                            "dimSight": 0,
+                            "brightSight": 0,
+                            "dimLight": 0,
+                            "brightLight": 0,
+                            "sightAngle": 360,
+                            "lightAngle": 360,
+                            "lightAlpha": 1,
+                            "lightAnimation": {
+                                "speed": 5,
+                                "intensity": 5
+                            },
+                            "actorId": "EhphHK2C8xDlI2qx",
+                            "actorLink": false,
+                            "disposition": -1,
+                            "displayBars": 0,
+                            "bar1": {},
+                            "bar2": {},
+                            "randomImg": false
+                        },
+                        "items": [],
+                        "effects": []
+                    },
+                    "name": "Enemy1",
+                    "permission": 3,
+                    "players": [],
+                    "owner": true,
+                    "img": "icons/svg/mystery-man.svg",
+                    "visible": true
+                }
+            ],
+            "active": true,
+            "round": 1,
+            "turn": 0
+        }
+    ],
+    "apps": [
+        {
+            "options": {
+                "baseApplication": "SidebarTab",
+                "width": 300,
+                "height": null,
+                "top": null,
+                "left": null,
+                "popOut": false,
+                "minimizable": true,
+                "resizable": false,
+                "id": "combat",
+                "classes": [],
+                "dragDrop": [],
+                "tabs": [],
+                "filters": [],
+                "title": "Combat Tracker",
+                "template": "templates/sidebar/combat-tracker.html",
+                "scrollY": [
+                    ".directory-list"
+                ]
+            },
+            "appId": 14,
+            "_element": null,
+            "position": {
+                "width": 300,
+                "height": null,
+                "left": null,
+                "top": null
+            },
+            "_dragDrop": [],
+            "_tabs": [],
+            "_searchFilters": [],
+            "_minimized": false,
+            "_state": 0,
+            "_scrollPositions": null,
+            "tabName": "combat",
+            "_popout": null,
+            "_original": null,
+            "_highlighted": null,
+            "combat": {
+                "_id": "By2blJbXfG5nUx2J",
+                "permission": {
+                    "default": 0,
+                    "kBTmFuWzwEVmey9R": 3
+                },
+                "sort": 100001,
+                "flags": {},
+                "scene": "CZUqN3uSbHzEAEVV",
+                "combatants": [
+                    {
+                        "_id": "EVfNRgc0BXFOe5j8",
+                        "flags": {},
+                        "tokenId": "uKZ8tn1SM9zZFEqG",
+                        "initiative": 13,
+                        "hidden": false,
+                        "token": {
+                            "_id": "uKZ8tn1SM9zZFEqG",
+                            "flags": {},
+                            "name": "Player1",
+                            "displayName": 0,
+                            "img": "icons/svg/mystery-man.svg",
+                            "tint": null,
+                            "width": 1,
+                            "height": 1,
+                            "scale": 1,
+                            "x": 1400,
+                            "y": 1000,
+                            "elevation": 0,
+                            "lockRotation": false,
+                            "rotation": 0,
+                            "effects": [],
+                            "hidden": false,
+                            "vision": true,
+                            "dimSight": 30,
+                            "brightSight": 0,
+                            "dimLight": 0,
+                            "brightLight": 0,
+                            "sightAngle": 360,
+                            "lightAngle": 360,
+                            "lightAlpha": 1,
+                            "lightAnimation": {
+                                "speed": 5,
+                                "intensity": 5
+                            },
+                            "actorId": "mRnnkAe6aTbLnnk6",
+                            "actorLink": true,
+                            "actorData": {},
+                            "disposition": 1,
+                            "displayBars": 0,
+                            "bar1": {},
+                            "bar2": {}
+                        },
+                        "actor": {
+                            "_id": "mRnnkAe6aTbLnnk6",
+                            "name": "Player1",
+                            "permission": {
+                                "default": 0,
+                                "kBTmFuWzwEVmey9R": 3
+                            },
+                            "type": "character",
+                            "data": {
+                                "abilities": {
+                                    "str": {
+                                        "value": 10,
+                                        "proficient": 0
+                                    },
+                                    "dex": {
+                                        "value": 10,
+                                        "proficient": 0
+                                    },
+                                    "con": {
+                                        "value": 10,
+                                        "proficient": 0
+                                    },
+                                    "int": {
+                                        "value": 10,
+                                        "proficient": 0
+                                    },
+                                    "wis": {
+                                        "value": 10,
+                                        "proficient": 0
+                                    },
+                                    "cha": {
+                                        "value": 10,
+                                        "proficient": 0
+                                    }
+                                },
+                                "attributes": {
+                                    "ac": {
+                                        "value": 10
+                                    },
+                                    "hp": {
+                                        "value": 10,
+                                        "min": 0,
+                                        "max": 10,
+                                        "temp": null,
+                                        "tempmax": null
+                                    },
+                                    "init": {
+                                        "value": 0,
+                                        "bonus": 0
+                                    },
+                                    "movement": {
+                                        "burrow": 0,
+                                        "climb": 0,
+                                        "fly": 0,
+                                        "swim": 0,
+                                        "walk": 30,
+                                        "units": "ft",
+                                        "hover": false
+                                    },
+                                    "senses": {
+                                        "darkvision": 0,
+                                        "blindsight": 0,
+                                        "tremorsense": 0,
+                                        "truesight": 0,
+                                        "units": "ft",
+                                        "special": ""
+                                    },
+                                    "spellcasting": "int",
+                                    "death": {
+                                        "success": 0,
+                                        "failure": 0
+                                    },
+                                    "encumbrance": {
+                                        "value": null,
+                                        "max": null
+                                    },
+                                    "exhaustion": 0,
+                                    "inspiration": false
+                                },
+                                "details": {
+                                    "biography": {
+                                        "value": "",
+                                        "public": ""
+                                    },
+                                    "alignment": "",
+                                    "race": "",
+                                    "background": "",
+                                    "xp": {
+                                        "value": 0,
+                                        "min": 0,
+                                        "max": 300
+                                    },
+                                    "appearance": "",
+                                    "trait": "",
+                                    "ideal": "",
+                                    "bond": "",
+                                    "flaw": ""
+                                },
+                                "traits": {
+                                    "size": "med",
+                                    "di": {
+                                        "value": [],
+                                        "custom": ""
+                                    },
+                                    "dr": {
+                                        "value": [],
+                                        "custom": ""
+                                    },
+                                    "dv": {
+                                        "value": [],
+                                        "custom": ""
+                                    },
+                                    "ci": {
+                                        "value": [],
+                                        "custom": ""
+                                    },
+                                    "languages": {
+                                        "value": [],
+                                        "custom": ""
+                                    },
+                                    "weaponProf": {
+                                        "value": [],
+                                        "custom": ""
+                                    },
+                                    "armorProf": {
+                                        "value": [],
+                                        "custom": ""
+                                    },
+                                    "toolProf": {
+                                        "value": [],
+                                        "custom": ""
+                                    }
+                                },
+                                "currency": {
+                                    "pp": 0,
+                                    "gp": 0,
+                                    "ep": 0,
+                                    "sp": 0,
+                                    "cp": 0
+                                },
+                                "skills": {
+                                    "acr": {
+                                        "value": 0,
+                                        "ability": "dex"
+                                    },
+                                    "ani": {
+                                        "value": 0,
+                                        "ability": "wis"
+                                    },
+                                    "arc": {
+                                        "value": 0,
+                                        "ability": "int"
+                                    },
+                                    "ath": {
+                                        "value": 0,
+                                        "ability": "str"
+                                    },
+                                    "dec": {
+                                        "value": 0,
+                                        "ability": "cha"
+                                    },
+                                    "his": {
+                                        "value": 0,
+                                        "ability": "int"
+                                    },
+                                    "ins": {
+                                        "value": 0,
+                                        "ability": "wis"
+                                    },
+                                    "itm": {
+                                        "value": 0,
+                                        "ability": "cha"
+                                    },
+                                    "inv": {
+                                        "value": 0,
+                                        "ability": "int"
+                                    },
+                                    "med": {
+                                        "value": 0,
+                                        "ability": "wis"
+                                    },
+                                    "nat": {
+                                        "value": 0,
+                                        "ability": "int"
+                                    },
+                                    "prc": {
+                                        "value": 0,
+                                        "ability": "wis"
+                                    },
+                                    "prf": {
+                                        "value": 0,
+                                        "ability": "cha"
+                                    },
+                                    "per": {
+                                        "value": 0,
+                                        "ability": "cha"
+                                    },
+                                    "rel": {
+                                        "value": 0,
+                                        "ability": "int"
+                                    },
+                                    "slt": {
+                                        "value": 0,
+                                        "ability": "dex"
+                                    },
+                                    "ste": {
+                                        "value": 0,
+                                        "ability": "dex"
+                                    },
+                                    "sur": {
+                                        "value": 0,
+                                        "ability": "wis"
+                                    }
+                                },
+                                "spells": {
+                                    "spell1": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell2": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell3": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell4": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell5": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell6": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell7": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell8": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell9": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "pact": {
+                                        "value": 0,
+                                        "override": null
+                                    }
+                                },
+                                "bonuses": {
+                                    "mwak": {
+                                        "attack": "",
+                                        "damage": ""
+                                    },
+                                    "rwak": {
+                                        "attack": "",
+                                        "damage": ""
+                                    },
+                                    "msak": {
+                                        "attack": "",
+                                        "damage": ""
+                                    },
+                                    "rsak": {
+                                        "attack": "",
+                                        "damage": ""
+                                    },
+                                    "abilities": {
+                                        "check": "",
+                                        "save": "",
+                                        "skill": ""
+                                    },
+                                    "spell": {
+                                        "dc": ""
+                                    }
+                                },
+                                "resources": {
+                                    "primary": {
+                                        "value": null,
+                                        "max": null,
+                                        "sr": false,
+                                        "lr": false,
+                                        "label": ""
+                                    },
+                                    "secondary": {
+                                        "value": null,
+                                        "max": null,
+                                        "sr": false,
+                                        "lr": false,
+                                        "label": ""
+                                    },
+                                    "tertiary": {
+                                        "value": null,
+                                        "max": null,
+                                        "sr": false,
+                                        "lr": false,
+                                        "label": ""
+                                    }
+                                }
+                            },
+                            "sort": 100001,
+                            "flags": {},
+                            "token": {
+                                "flags": {},
+                                "name": "Player1",
+                                "displayName": 0,
+                                "img": "icons/svg/mystery-man.svg",
+                                "tint": null,
+                                "width": 1,
+                                "height": 1,
+                                "scale": 1,
+                                "lockRotation": false,
+                                "rotation": 0,
+                                "vision": true,
+                                "dimSight": 30,
+                                "brightSight": 0,
+                                "dimLight": 0,
+                                "brightLight": 0,
+                                "sightAngle": 360,
+                                "lightAngle": 360,
+                                "lightAlpha": 1,
+                                "lightAnimation": {
+                                    "speed": 5,
+                                    "intensity": 5
+                                },
+                                "actorId": "mRnnkAe6aTbLnnk6",
+                                "actorLink": true,
+                                "disposition": 1,
+                                "displayBars": 0,
+                                "bar1": {},
+                                "bar2": {},
+                                "randomImg": false
+                            },
+                            "items": [],
+                            "effects": []
+                        },
+                        "name": "Player1",
+                        "permission": 3,
+                        "players": [],
+                        "owner": true,
+                        "img": "icons/svg/mystery-man.svg",
+                        "visible": true
+                    },
+                    {
+                        "_id": "UeEE2l6GAd9uWf56",
+                        "flags": {},
+                        "tokenId": "s9foAxri4wQDDO9t",
+                        "initiative": 10,
+                        "hidden": false,
+                        "token": {
+                            "_id": "s9foAxri4wQDDO9t",
+                            "flags": {},
+                            "name": "Player2",
+                            "displayName": 0,
+                            "img": "icons/svg/mystery-man.svg",
+                            "tint": null,
+                            "width": 1,
+                            "height": 1,
+                            "scale": 1,
+                            "x": 1600,
+                            "y": 1000,
+                            "elevation": 0,
+                            "lockRotation": false,
+                            "rotation": 0,
+                            "effects": [],
+                            "hidden": false,
+                            "vision": true,
+                            "dimSight": 30,
+                            "brightSight": 0,
+                            "dimLight": 0,
+                            "brightLight": 0,
+                            "sightAngle": 360,
+                            "lightAngle": 360,
+                            "lightAlpha": 1,
+                            "lightAnimation": {
+                                "speed": 5,
+                                "intensity": 5
+                            },
+                            "actorId": "q28otsmmO5i8yMsU",
+                            "actorLink": true,
+                            "actorData": {},
+                            "disposition": 1,
+                            "displayBars": 0,
+                            "bar1": {},
+                            "bar2": {}
+                        },
+                        "actor": {
+                            "_id": "q28otsmmO5i8yMsU",
+                            "name": "Player2",
+                            "permission": {
+                                "default": 0,
+                                "kBTmFuWzwEVmey9R": 3
+                            },
+                            "type": "character",
+                            "data": {
+                                "abilities": {
+                                    "str": {
+                                        "value": 10,
+                                        "proficient": 0
+                                    },
+                                    "dex": {
+                                        "value": 10,
+                                        "proficient": 0
+                                    },
+                                    "con": {
+                                        "value": 10,
+                                        "proficient": 0
+                                    },
+                                    "int": {
+                                        "value": 10,
+                                        "proficient": 0
+                                    },
+                                    "wis": {
+                                        "value": 10,
+                                        "proficient": 0
+                                    },
+                                    "cha": {
+                                        "value": 10,
+                                        "proficient": 0
+                                    }
+                                },
+                                "attributes": {
+                                    "ac": {
+                                        "value": 10
+                                    },
+                                    "hp": {
+                                        "value": 10,
+                                        "min": 0,
+                                        "max": 10,
+                                        "temp": null,
+                                        "tempmax": null
+                                    },
+                                    "init": {
+                                        "value": 0,
+                                        "bonus": 0
+                                    },
+                                    "movement": {
+                                        "burrow": 0,
+                                        "climb": 0,
+                                        "fly": 0,
+                                        "swim": 0,
+                                        "walk": 30,
+                                        "units": "ft",
+                                        "hover": false
+                                    },
+                                    "senses": {
+                                        "darkvision": 0,
+                                        "blindsight": 0,
+                                        "tremorsense": 0,
+                                        "truesight": 0,
+                                        "units": "ft",
+                                        "special": ""
+                                    },
+                                    "spellcasting": "int",
+                                    "death": {
+                                        "success": 0,
+                                        "failure": 0
+                                    },
+                                    "encumbrance": {
+                                        "value": null,
+                                        "max": null
+                                    },
+                                    "exhaustion": 0,
+                                    "inspiration": false
+                                },
+                                "details": {
+                                    "biography": {
+                                        "value": "",
+                                        "public": ""
+                                    },
+                                    "alignment": "",
+                                    "race": "",
+                                    "background": "",
+                                    "xp": {
+                                        "value": 0,
+                                        "min": 0,
+                                        "max": 300
+                                    },
+                                    "appearance": "",
+                                    "trait": "",
+                                    "ideal": "",
+                                    "bond": "",
+                                    "flaw": ""
+                                },
+                                "traits": {
+                                    "size": "med",
+                                    "di": {
+                                        "value": [],
+                                        "custom": ""
+                                    },
+                                    "dr": {
+                                        "value": [],
+                                        "custom": ""
+                                    },
+                                    "dv": {
+                                        "value": [],
+                                        "custom": ""
+                                    },
+                                    "ci": {
+                                        "value": [],
+                                        "custom": ""
+                                    },
+                                    "languages": {
+                                        "value": [],
+                                        "custom": ""
+                                    },
+                                    "weaponProf": {
+                                        "value": [],
+                                        "custom": ""
+                                    },
+                                    "armorProf": {
+                                        "value": [],
+                                        "custom": ""
+                                    },
+                                    "toolProf": {
+                                        "value": [],
+                                        "custom": ""
+                                    }
+                                },
+                                "currency": {
+                                    "pp": 0,
+                                    "gp": 0,
+                                    "ep": 0,
+                                    "sp": 0,
+                                    "cp": 0
+                                },
+                                "skills": {
+                                    "acr": {
+                                        "value": 0,
+                                        "ability": "dex"
+                                    },
+                                    "ani": {
+                                        "value": 0,
+                                        "ability": "wis"
+                                    },
+                                    "arc": {
+                                        "value": 0,
+                                        "ability": "int"
+                                    },
+                                    "ath": {
+                                        "value": 0,
+                                        "ability": "str"
+                                    },
+                                    "dec": {
+                                        "value": 0,
+                                        "ability": "cha"
+                                    },
+                                    "his": {
+                                        "value": 0,
+                                        "ability": "int"
+                                    },
+                                    "ins": {
+                                        "value": 0,
+                                        "ability": "wis"
+                                    },
+                                    "itm": {
+                                        "value": 0,
+                                        "ability": "cha"
+                                    },
+                                    "inv": {
+                                        "value": 0,
+                                        "ability": "int"
+                                    },
+                                    "med": {
+                                        "value": 0,
+                                        "ability": "wis"
+                                    },
+                                    "nat": {
+                                        "value": 0,
+                                        "ability": "int"
+                                    },
+                                    "prc": {
+                                        "value": 0,
+                                        "ability": "wis"
+                                    },
+                                    "prf": {
+                                        "value": 0,
+                                        "ability": "cha"
+                                    },
+                                    "per": {
+                                        "value": 0,
+                                        "ability": "cha"
+                                    },
+                                    "rel": {
+                                        "value": 0,
+                                        "ability": "int"
+                                    },
+                                    "slt": {
+                                        "value": 0,
+                                        "ability": "dex"
+                                    },
+                                    "ste": {
+                                        "value": 0,
+                                        "ability": "dex"
+                                    },
+                                    "sur": {
+                                        "value": 0,
+                                        "ability": "wis"
+                                    }
+                                },
+                                "spells": {
+                                    "spell1": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell2": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell3": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell4": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell5": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell6": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell7": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell8": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell9": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "pact": {
+                                        "value": 0,
+                                        "override": null
+                                    }
+                                },
+                                "bonuses": {
+                                    "mwak": {
+                                        "attack": "",
+                                        "damage": ""
+                                    },
+                                    "rwak": {
+                                        "attack": "",
+                                        "damage": ""
+                                    },
+                                    "msak": {
+                                        "attack": "",
+                                        "damage": ""
+                                    },
+                                    "rsak": {
+                                        "attack": "",
+                                        "damage": ""
+                                    },
+                                    "abilities": {
+                                        "check": "",
+                                        "save": "",
+                                        "skill": ""
+                                    },
+                                    "spell": {
+                                        "dc": ""
+                                    }
+                                },
+                                "resources": {
+                                    "primary": {
+                                        "value": null,
+                                        "max": null,
+                                        "sr": false,
+                                        "lr": false,
+                                        "label": ""
+                                    },
+                                    "secondary": {
+                                        "value": null,
+                                        "max": null,
+                                        "sr": false,
+                                        "lr": false,
+                                        "label": ""
+                                    },
+                                    "tertiary": {
+                                        "value": null,
+                                        "max": null,
+                                        "sr": false,
+                                        "lr": false,
+                                        "label": ""
+                                    }
+                                }
+                            },
+                            "sort": 100001,
+                            "flags": {},
+                            "token": {
+                                "flags": {},
+                                "name": "Player2",
+                                "displayName": 0,
+                                "img": "icons/svg/mystery-man.svg",
+                                "tint": null,
+                                "width": 1,
+                                "height": 1,
+                                "scale": 1,
+                                "lockRotation": false,
+                                "rotation": 0,
+                                "vision": true,
+                                "dimSight": 30,
+                                "brightSight": 0,
+                                "dimLight": 0,
+                                "brightLight": 0,
+                                "sightAngle": 360,
+                                "lightAngle": 360,
+                                "lightAlpha": 1,
+                                "lightAnimation": {
+                                    "speed": 5,
+                                    "intensity": 5
+                                },
+                                "actorId": "q28otsmmO5i8yMsU",
+                                "actorLink": true,
+                                "disposition": 1,
+                                "displayBars": 0,
+                                "bar1": {},
+                                "bar2": {},
+                                "randomImg": false
+                            },
+                            "items": [],
+                            "effects": []
+                        },
+                        "name": "Player2",
+                        "permission": 3,
+                        "players": [],
+                        "owner": true,
+                        "img": "icons/svg/mystery-man.svg",
+                        "visible": true
+                    },
+                    {
+                        "_id": "Pcvm6IfAuaFOOlNt",
+                        "flags": {},
+                        "tokenId": "bOqV86PyLp5uhl2S",
+                        "initiative": 9,
+                        "hidden": false,
+                        "token": {
+                            "_id": "bOqV86PyLp5uhl2S",
+                            "flags": {},
+                            "name": "Enemy1",
+                            "displayName": 0,
+                            "img": "icons/svg/mystery-man.svg",
+                            "tint": null,
+                            "width": 1,
+                            "height": 1,
+                            "scale": 1,
+                            "x": 1400,
+                            "y": 1200,
+                            "elevation": 0,
+                            "lockRotation": false,
+                            "rotation": 0,
+                            "effects": [],
+                            "hidden": false,
+                            "vision": false,
+                            "dimSight": 0,
+                            "brightSight": 0,
+                            "dimLight": 0,
+                            "brightLight": 0,
+                            "sightAngle": 360,
+                            "lightAngle": 360,
+                            "lightAlpha": 1,
+                            "lightAnimation": {
+                                "speed": 5,
+                                "intensity": 5
+                            },
+                            "actorId": "FYHM2afmu025pA1Q",
+                            "actorLink": false,
+                            "actorData": {},
+                            "disposition": -1,
+                            "displayBars": 0,
+                            "bar1": {},
+                            "bar2": {}
+                        },
+                        "actor": {
+                            "_id": "FYHM2afmu025pA1Q",
+                            "name": "Enemy1",
+                            "permission": {
+                                "default": 0,
+                                "kBTmFuWzwEVmey9R": 3
+                            },
+                            "type": "npc",
+                            "data": {
+                                "abilities": {
+                                    "str": {
+                                        "value": 10,
+                                        "proficient": 0
+                                    },
+                                    "dex": {
+                                        "value": 10,
+                                        "proficient": 0
+                                    },
+                                    "con": {
+                                        "value": 10,
+                                        "proficient": 0
+                                    },
+                                    "int": {
+                                        "value": 10,
+                                        "proficient": 0
+                                    },
+                                    "wis": {
+                                        "value": 10,
+                                        "proficient": 0
+                                    },
+                                    "cha": {
+                                        "value": 10,
+                                        "proficient": 0
+                                    }
+                                },
+                                "attributes": {
+                                    "ac": {
+                                        "value": 10
+                                    },
+                                    "hp": {
+                                        "value": 10,
+                                        "min": 0,
+                                        "max": 10,
+                                        "temp": 0,
+                                        "tempmax": 0,
+                                        "formula": ""
+                                    },
+                                    "init": {
+                                        "value": 0,
+                                        "bonus": 0
+                                    },
+                                    "movement": {
+                                        "burrow": 0,
+                                        "climb": 0,
+                                        "fly": 0,
+                                        "swim": 0,
+                                        "walk": 30,
+                                        "units": "ft",
+                                        "hover": false
+                                    },
+                                    "senses": {
+                                        "darkvision": 0,
+                                        "blindsight": 0,
+                                        "tremorsense": 0,
+                                        "truesight": 0,
+                                        "units": "ft",
+                                        "special": ""
+                                    },
+                                    "spellcasting": "int"
+                                },
+                                "details": {
+                                    "biography": {
+                                        "value": "",
+                                        "public": ""
+                                    },
+                                    "alignment": "",
+                                    "race": "",
+                                    "type": "",
+                                    "environment": "",
+                                    "cr": 1,
+                                    "spellLevel": 0,
+                                    "xp": {
+                                        "value": 10
+                                    },
+                                    "source": ""
+                                },
+                                "traits": {
+                                    "size": "med",
+                                    "di": {
+                                        "value": [],
+                                        "custom": ""
+                                    },
+                                    "dr": {
+                                        "value": [],
+                                        "custom": ""
+                                    },
+                                    "dv": {
+                                        "value": [],
+                                        "custom": ""
+                                    },
+                                    "ci": {
+                                        "value": [],
+                                        "custom": ""
+                                    },
+                                    "languages": {
+                                        "value": [],
+                                        "custom": ""
+                                    }
+                                },
+                                "currency": {
+                                    "pp": 0,
+                                    "gp": 0,
+                                    "ep": 0,
+                                    "sp": 0,
+                                    "cp": 0
+                                },
+                                "skills": {
+                                    "acr": {
+                                        "value": 0,
+                                        "ability": "dex"
+                                    },
+                                    "ani": {
+                                        "value": 0,
+                                        "ability": "wis"
+                                    },
+                                    "arc": {
+                                        "value": 0,
+                                        "ability": "int"
+                                    },
+                                    "ath": {
+                                        "value": 0,
+                                        "ability": "str"
+                                    },
+                                    "dec": {
+                                        "value": 0,
+                                        "ability": "cha"
+                                    },
+                                    "his": {
+                                        "value": 0,
+                                        "ability": "int"
+                                    },
+                                    "ins": {
+                                        "value": 0,
+                                        "ability": "wis"
+                                    },
+                                    "itm": {
+                                        "value": 0,
+                                        "ability": "cha"
+                                    },
+                                    "inv": {
+                                        "value": 0,
+                                        "ability": "int"
+                                    },
+                                    "med": {
+                                        "value": 0,
+                                        "ability": "wis"
+                                    },
+                                    "nat": {
+                                        "value": 0,
+                                        "ability": "int"
+                                    },
+                                    "prc": {
+                                        "value": 0,
+                                        "ability": "wis"
+                                    },
+                                    "prf": {
+                                        "value": 0,
+                                        "ability": "cha"
+                                    },
+                                    "per": {
+                                        "value": 0,
+                                        "ability": "cha"
+                                    },
+                                    "rel": {
+                                        "value": 0,
+                                        "ability": "int"
+                                    },
+                                    "slt": {
+                                        "value": 0,
+                                        "ability": "dex"
+                                    },
+                                    "ste": {
+                                        "value": 0,
+                                        "ability": "dex"
+                                    },
+                                    "sur": {
+                                        "value": 0,
+                                        "ability": "wis"
+                                    }
+                                },
+                                "spells": {
+                                    "spell1": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell2": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell3": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell4": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell5": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell6": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell7": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell8": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell9": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "pact": {
+                                        "value": 0,
+                                        "override": null
+                                    }
+                                },
+                                "bonuses": {
+                                    "mwak": {
+                                        "attack": "",
+                                        "damage": ""
+                                    },
+                                    "rwak": {
+                                        "attack": "",
+                                        "damage": ""
+                                    },
+                                    "msak": {
+                                        "attack": "",
+                                        "damage": ""
+                                    },
+                                    "rsak": {
+                                        "attack": "",
+                                        "damage": ""
+                                    },
+                                    "abilities": {
+                                        "check": "",
+                                        "save": "",
+                                        "skill": ""
+                                    },
+                                    "spell": {
+                                        "dc": ""
+                                    }
+                                },
+                                "resources": {
+                                    "legact": {
+                                        "value": 0,
+                                        "max": 0
+                                    },
+                                    "legres": {
+                                        "value": 0,
+                                        "max": 0
+                                    },
+                                    "lair": {
+                                        "value": false,
+                                        "initiative": 0
+                                    }
+                                }
+                            },
+                            "sort": 100001,
+                            "flags": {},
+                            "token": {
+                                "flags": {},
+                                "name": "Enemy1",
+                                "displayName": 0,
+                                "img": "icons/svg/mystery-man.svg",
+                                "tint": null,
+                                "width": 1,
+                                "height": 1,
+                                "scale": 1,
+                                "lockRotation": false,
+                                "rotation": 0,
+                                "vision": false,
+                                "dimSight": 0,
+                                "brightSight": 0,
+                                "dimLight": 0,
+                                "brightLight": 0,
+                                "sightAngle": 360,
+                                "lightAngle": 360,
+                                "lightAlpha": 1,
+                                "lightAnimation": {
+                                    "speed": 5,
+                                    "intensity": 5
+                                },
+                                "actorId": "FYHM2afmu025pA1Q",
+                                "actorLink": false,
+                                "disposition": -1,
+                                "displayBars": 0,
+                                "bar1": {},
+                                "bar2": {},
+                                "randomImg": false
+                            },
+                            "items": [],
+                            "effects": []
+                        },
+                        "name": "Enemy1",
+                        "permission": 3,
+                        "players": [],
+                        "owner": true,
+                        "img": "icons/svg/mystery-man.svg",
+                        "visible": true
+                    },
+                    {
+                        "_id": "EwmoU1CZx9xPVwOD",
+                        "flags": {},
+                        "tokenId": "viPhaN1Xq1LBq1xi",
+                        "initiative": 4,
+                        "hidden": false,
+                        "token": {
+                            "_id": "viPhaN1Xq1LBq1xi",
+                            "flags": {},
+                            "name": "Enemy1",
+                            "displayName": 0,
+                            "img": "icons/svg/mystery-man.svg",
+                            "tint": null,
+                            "width": 1,
+                            "height": 1,
+                            "scale": 1,
+                            "x": 1600,
+                            "y": 1200,
+                            "elevation": 0,
+                            "lockRotation": false,
+                            "rotation": 0,
+                            "effects": [],
+                            "hidden": false,
+                            "vision": false,
+                            "dimSight": 0,
+                            "brightSight": 0,
+                            "dimLight": 0,
+                            "brightLight": 0,
+                            "sightAngle": 360,
+                            "lightAngle": 360,
+                            "lightAlpha": 1,
+                            "lightAnimation": {
+                                "speed": 5,
+                                "intensity": 5
+                            },
+                            "actorId": "EhphHK2C8xDlI2qx",
+                            "actorLink": false,
+                            "actorData": {},
+                            "disposition": -1,
+                            "displayBars": 0,
+                            "bar1": {},
+                            "bar2": {}
+                        },
+                        "actor": {
+                            "_id": "EhphHK2C8xDlI2qx",
+                            "name": "Enemy2",
+                            "permission": {
+                                "default": 0,
+                                "kBTmFuWzwEVmey9R": 3
+                            },
+                            "type": "npc",
+                            "data": {
+                                "abilities": {
+                                    "str": {
+                                        "value": 10,
+                                        "proficient": 0
+                                    },
+                                    "dex": {
+                                        "value": 10,
+                                        "proficient": 0
+                                    },
+                                    "con": {
+                                        "value": 10,
+                                        "proficient": 0
+                                    },
+                                    "int": {
+                                        "value": 10,
+                                        "proficient": 0
+                                    },
+                                    "wis": {
+                                        "value": 10,
+                                        "proficient": 0
+                                    },
+                                    "cha": {
+                                        "value": 10,
+                                        "proficient": 0
+                                    }
+                                },
+                                "attributes": {
+                                    "ac": {
+                                        "value": 10
+                                    },
+                                    "hp": {
+                                        "value": 10,
+                                        "min": 0,
+                                        "max": 10,
+                                        "temp": 0,
+                                        "tempmax": 0,
+                                        "formula": ""
+                                    },
+                                    "init": {
+                                        "value": 0,
+                                        "bonus": 0
+                                    },
+                                    "movement": {
+                                        "burrow": 0,
+                                        "climb": 0,
+                                        "fly": 0,
+                                        "swim": 0,
+                                        "walk": 30,
+                                        "units": "ft",
+                                        "hover": false
+                                    },
+                                    "senses": {
+                                        "darkvision": 0,
+                                        "blindsight": 0,
+                                        "tremorsense": 0,
+                                        "truesight": 0,
+                                        "units": "ft",
+                                        "special": ""
+                                    },
+                                    "spellcasting": "int"
+                                },
+                                "details": {
+                                    "biography": {
+                                        "value": "",
+                                        "public": ""
+                                    },
+                                    "alignment": "",
+                                    "race": "",
+                                    "type": "",
+                                    "environment": "",
+                                    "cr": 1,
+                                    "spellLevel": 0,
+                                    "xp": {
+                                        "value": 10
+                                    },
+                                    "source": ""
+                                },
+                                "traits": {
+                                    "size": "med",
+                                    "di": {
+                                        "value": [],
+                                        "custom": ""
+                                    },
+                                    "dr": {
+                                        "value": [],
+                                        "custom": ""
+                                    },
+                                    "dv": {
+                                        "value": [],
+                                        "custom": ""
+                                    },
+                                    "ci": {
+                                        "value": [],
+                                        "custom": ""
+                                    },
+                                    "languages": {
+                                        "value": [],
+                                        "custom": ""
+                                    }
+                                },
+                                "currency": {
+                                    "pp": 0,
+                                    "gp": 0,
+                                    "ep": 0,
+                                    "sp": 0,
+                                    "cp": 0
+                                },
+                                "skills": {
+                                    "acr": {
+                                        "value": 0,
+                                        "ability": "dex"
+                                    },
+                                    "ani": {
+                                        "value": 0,
+                                        "ability": "wis"
+                                    },
+                                    "arc": {
+                                        "value": 0,
+                                        "ability": "int"
+                                    },
+                                    "ath": {
+                                        "value": 0,
+                                        "ability": "str"
+                                    },
+                                    "dec": {
+                                        "value": 0,
+                                        "ability": "cha"
+                                    },
+                                    "his": {
+                                        "value": 0,
+                                        "ability": "int"
+                                    },
+                                    "ins": {
+                                        "value": 0,
+                                        "ability": "wis"
+                                    },
+                                    "itm": {
+                                        "value": 0,
+                                        "ability": "cha"
+                                    },
+                                    "inv": {
+                                        "value": 0,
+                                        "ability": "int"
+                                    },
+                                    "med": {
+                                        "value": 0,
+                                        "ability": "wis"
+                                    },
+                                    "nat": {
+                                        "value": 0,
+                                        "ability": "int"
+                                    },
+                                    "prc": {
+                                        "value": 0,
+                                        "ability": "wis"
+                                    },
+                                    "prf": {
+                                        "value": 0,
+                                        "ability": "cha"
+                                    },
+                                    "per": {
+                                        "value": 0,
+                                        "ability": "cha"
+                                    },
+                                    "rel": {
+                                        "value": 0,
+                                        "ability": "int"
+                                    },
+                                    "slt": {
+                                        "value": 0,
+                                        "ability": "dex"
+                                    },
+                                    "ste": {
+                                        "value": 0,
+                                        "ability": "dex"
+                                    },
+                                    "sur": {
+                                        "value": 0,
+                                        "ability": "wis"
+                                    }
+                                },
+                                "spells": {
+                                    "spell1": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell2": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell3": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell4": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell5": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell6": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell7": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell8": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "spell9": {
+                                        "value": 0,
+                                        "override": null
+                                    },
+                                    "pact": {
+                                        "value": 0,
+                                        "override": null
+                                    }
+                                },
+                                "bonuses": {
+                                    "mwak": {
+                                        "attack": "",
+                                        "damage": ""
+                                    },
+                                    "rwak": {
+                                        "attack": "",
+                                        "damage": ""
+                                    },
+                                    "msak": {
+                                        "attack": "",
+                                        "damage": ""
+                                    },
+                                    "rsak": {
+                                        "attack": "",
+                                        "damage": ""
+                                    },
+                                    "abilities": {
+                                        "check": "",
+                                        "save": "",
+                                        "skill": ""
+                                    },
+                                    "spell": {
+                                        "dc": ""
+                                    }
+                                },
+                                "resources": {
+                                    "legact": {
+                                        "value": 0,
+                                        "max": 0
+                                    },
+                                    "legres": {
+                                        "value": 0,
+                                        "max": 0
+                                    },
+                                    "lair": {
+                                        "value": false,
+                                        "initiative": 0
+                                    }
+                                }
+                            },
+                            "sort": 100001,
+                            "flags": {},
+                            "token": {
+                                "flags": {},
+                                "name": "Enemy1",
+                                "displayName": 0,
+                                "img": "icons/svg/mystery-man.svg",
+                                "tint": null,
+                                "width": 1,
+                                "height": 1,
+                                "scale": 1,
+                                "lockRotation": false,
+                                "rotation": 0,
+                                "vision": false,
+                                "dimSight": 0,
+                                "brightSight": 0,
+                                "dimLight": 0,
+                                "brightLight": 0,
+                                "sightAngle": 360,
+                                "lightAngle": 360,
+                                "lightAlpha": 1,
+                                "lightAnimation": {
+                                    "speed": 5,
+                                    "intensity": 5
+                                },
+                                "actorId": "EhphHK2C8xDlI2qx",
+                                "actorLink": false,
+                                "disposition": -1,
+                                "displayBars": 0,
+                                "bar1": {},
+                                "bar2": {},
+                                "randomImg": false
+                            },
+                            "items": [],
+                            "effects": []
+                        },
+                        "name": "Enemy1",
+                        "permission": 3,
+                        "players": [],
+                        "owner": true,
+                        "img": "icons/svg/mystery-man.svg",
+                        "visible": true
+                    }
+                ],
+                "active": true,
+                "round": 1,
+                "turn": 0
+            }
+        }
+    ]
+}
