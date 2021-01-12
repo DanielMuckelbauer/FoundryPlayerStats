@@ -1,11 +1,11 @@
 {
-    "name": "stats",
-    "title": "A combat stats collector",
-    "description": "Sends combat stats to a database for storage and analysis.",
-    "author": "Daniel Muckelbauer",
-    "version": "1.0.0",
-    "minimumCoreVersion": "0.5.0",
-    "scripts": [
-        "scripts/roller.js"
-    ]
-  }
+  "name": "stats",
+  "title": "A combat stats collector",
+  "description": "Sends combat stats to a database for storage and analysis.",
+  "author": "Daniel Muckelbauer",
+  "version": "1.0.0",
+  "minimumCoreVersion": "0.5.0",
+  "esmodules": [
+    "./src/index.js"
+  ]
+}
