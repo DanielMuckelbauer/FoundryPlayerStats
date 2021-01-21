@@ -1,6 +1,8 @@
 'use strict'
 import { statsCollectorUrl } from "../data/endpoints.js";
 
+//CONFIG.debug.hooks = true
+
 Hooks.on('ready', () => {
   createGame();
 });
@@ -10,13 +12,15 @@ Hooks.on("renderCombatTracker", () => {
 });
 
 function createGame() {
-  fetch(`${statsCollectorUrl}/games/foundryTest`, {
-    headers: new Headers([['Access-Control-Allow-Origin', '*']]),
-    method: 'post',
-    body: ''
-  }).then(function(response) {
-    return response.json();
-  }).then(function(data) {
-    ChromeSamples.log('Created Gist:', data.html_url);
-  });
+  const gameId = game.data.world.id;
+
+  var requestOptions = {
+    method: 'POST'
+  };
+  
+  fetch(`${statsCollectorUrl}/api/games/${gameId}`, requestOptions)
+    .then(response => {
+      console.log('response', response.json());
+    })
+    .catch(error => console.log('error', error));
 }

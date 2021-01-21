@@ -1,4 +1,4 @@
 'use strict'
 
-export const statsCollectorUrl = "https://localhost:5001";
+export const statsCollectorUrl = "https://localhost:44385";
 
