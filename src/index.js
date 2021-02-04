@@ -1,1 +1,1 @@
-import {} from './stats-collector.js';
+import {} from './hooks-listener.js';
