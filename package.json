@@ -1,0 +1,26 @@
+{
+  "name": "foundryplayerstats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.20"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielMuckelbauer/FoundryStats.git"
+  },
+  "author": "Daniel Muckelbauer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielMuckelbauer/FoundryStats/issues"
+  },
+  "homepage": "https://github.com/DanielMuckelbauer/FoundryStats#readme"
+}
