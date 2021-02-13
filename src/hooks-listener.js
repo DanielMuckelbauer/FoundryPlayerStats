@@ -10,12 +10,12 @@ const playerStatsUpdater = new PlayerstatsUpdater(damageCalculator);
 
 Hooks.on('ready', () => {
   gameCreator.createGame();
-  playerStatsUpdater.initialize();
+  playerStatsUpdater.initialize(CombatEncounters.instance.active);
 });
 
 Hooks.on("updateCombat", () => {
   console.log('updateCombat');
-  playerStatsUpdater.updatePlayerStats();
+  playerStatsUpdater.updatePlayerStats(CombatEncounters.instance.active);
 });
 
 Hooks.on("getCombatTrackerEntryContext", () => {

@@ -1,24 +1,22 @@
 import { beforeEach } from '@jest/globals';
+import { DamageCalculator } from '../src/damage-calculator';
 import { PlayerstatsUpdater } from '../src/playerstats-updater';
 
 let playerstatsUpdater;
+let damageCalculator;
 
 beforeEach(() => {
-    playerstatsUpdater = new PlayerstatsUpdater();
-    CombatEncounters = {
-        instance: {
-            active: {
-                name: 'name'
-            }
-        }
-    };
+    damageCalculator = new DamageCalculator();
+    playerstatsUpdater = new PlayerstatsUpdater(damageCalculator);
 });
 
 test('initializes with copy of currently active encounter', () => {
-    playerstatsUpdater.initialize();
+    const activeInstance = { name: 'name' };
+
+    playerstatsUpdater.initialize(activeInstance);
 
     expect(playerstatsUpdater.copyOfEncounterAtTheBeginningOfTurn)
-        .toEqual(CombatEncounters.instance.active);
+        .toEqual(activeInstance);
     expect(playerstatsUpdater.copyOfEncounterAtTheBeginningOfTurn)
-        .not.toBe(CombatEncounters.instance.active);
+        .not.toBe(activeInstance);
 });

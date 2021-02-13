@@ -7,24 +7,24 @@ export class PlayerstatsUpdater {
         this.damageCalculator = damageCalculator;
     }
 
-    initialize() {
+    initialize(activeCombatInstance) {
         if (!this.copyOfEncounterAtTheBeginningOfTurn) {
-            this.copyOfEncounterAtTheBeginningOfTurn = cloneDeep(CombatEncounters.instance.active);
+            this.copyOfEncounterAtTheBeginningOfTurn = cloneDeep(activeCombatInstance);
         }
     }
 
-    updatePlayerStats() {
+    updatePlayerStats(activeCombatInstance) {
         const lastCombatant = this.copyOfEncounterAtTheBeginningOfTurn.combatant;
-        const currentCombatant = CombatEncounters.instance.active.combatant;
+        const currentCombatant = activeCombatInstance.combatant;
         if (currentCombatant === lastCombatant) {
             return;
         }
-        const damageDealt = this.damageCalculator.calculateDamageDealt(this.copyOfEncounterAtTheBeginningOfTurn, CombatEncounters.instance.active);
-        const damageTaken = this.damageCalculator.calculateDamageTaken(this.copyOfEncounterAtTheBeginningOfTurn, CombatEncounters.instance.active);
+        const damageDealt = this.damageCalculator.calculateDamageDealt(this.copyOfEncounterAtTheBeginningOfTurn, activeCombatInstance);
+        const damageTaken = this.damageCalculator.calculateDamageTaken(this.copyOfEncounterAtTheBeginningOfTurn, activeCombatInstance);
 
         this.postUpdatedPlayerStats(damageDealt, damageTaken);
 
-        this.copyOfEncounterAtTheBeginningOfTurn = cloneDeep(CombatEncounters.instance.active);
+        this.copyOfEncounterAtTheBeginningOfTurn = cloneDeep(activeCombatInstance);
     }
 
     postUpdatedPlayerStats(damageDealt, damageTaken) {
