@@ -1,0 +1,21 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "globals": {
+        "CombatEncounters": "writable",
+        "game": "readonly",
+        "Hooks": "readonly"
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "parser": "babel-eslint",
+    "rules": {
+        "semi":["error", "always"]
+    }
+}

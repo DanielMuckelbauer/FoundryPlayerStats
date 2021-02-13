@@ -3,15 +3,23 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "test": "tests"
   },
   "dependencies": {
+    "ansi-colors": "^4.1.1",
+    "jest": "^26.6.3",
     "lodash-es": "^4.17.20"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.20.0"
+  },
   "scripts": {
-    "test": "test"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
+    "lint": "eslint **/*.js --ignore-pattern node_modules/"
   },
   "repository": {
     "type": "git",
