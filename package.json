@@ -19,7 +19,7 @@
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
-    "lint": "eslint **/*.js --ignore-pattern node_modules/"
+    "lint": "eslint --ignore-pattern node_modules/"
   },
   "repository": {
     "type": "git",
