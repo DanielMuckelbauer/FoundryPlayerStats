@@ -13,13 +13,14 @@ export class PlayerstatsUpdater {
         this.globalsProvider = globalsProvider;
     }
 
-    initialize(activeCombatInstance) {
+    initialize() {
         if (!this.copyOfLastCombat) {
-            this.copyOfLastCombat = cloneDeep(activeCombatInstance);
+            this.copyOfLastCombat = cloneDeep(this.globalsProvider.activeCombat);
         }
     }
 
-    updatePlayerStats(currentCombat) {
+    updatePlayerStats() {
+        const currentCombat = this.globalsProvider.activeCombat;
         if (!this.combatantHasChanged(currentCombat)) {
             return;
         }
