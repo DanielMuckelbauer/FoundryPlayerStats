@@ -6,9 +6,9 @@ import { PlayerstatsClient } from "./playerstats-client.js";
 
 // CONFIG.debug.hooks = true
 const damageCalculator = new DamageCalculator();
-const gameCreator = new GameClient();
 const globalsProvider = new GlobalsProvider();
-const playerstatsClient = new PlayerstatsClient();
+const gameCreator = new GameClient(globalsProvider);
+const playerstatsClient = new PlayerstatsClient(globalsProvider);
 const playerstatsUpdater = new PlayerstatsUpdater(damageCalculator, playerstatsClient, globalsProvider);
 
 Hooks.on('ready', () => {

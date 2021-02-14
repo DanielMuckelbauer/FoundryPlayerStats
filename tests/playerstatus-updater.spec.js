@@ -37,6 +37,7 @@ test('stores a copy of the new combat encounter', () => {
     jest.spyOn(damageCalculator, 'calculateDamageDealt').mockReturnValue(1);
     jest.spyOn(damageCalculator, 'calculateDamageTaken').mockReturnValue(1);
     jest.spyOn(globalsProvider, 'gameName', 'get').mockReturnValue('gameName');
+    jest.spyOn(playerstatsClient, 'sendPlayerstats').mockImplementation(() => { });
 
     playerstatsUpdater.updatePlayerStats(newCombat);
 
@@ -66,7 +67,7 @@ test('calls playerstatsClient with correct object', () => {
     jest.spyOn(damageCalculator, 'calculateDamageDealt').mockReturnValue(2);
     jest.spyOn(damageCalculator, 'calculateDamageTaken').mockReturnValue(1);
     jest.spyOn(globalsProvider, 'gameName', 'get').mockReturnValue('gameName');
-    jest.spyOn(playerstatsClient, 'sendPlayerstats');
+    jest.spyOn(playerstatsClient, 'sendPlayerstats').mockImplementation(() => { });
 
     playerstatsUpdater.updatePlayerStats(newCombat);
 
