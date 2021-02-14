@@ -1,4 +1,4 @@
-import { GameCreator } from "./game-creator.js";
+import { GameClient } from "./game-client.js";
 import { PlayerstatsUpdater } from "./playerstats-updater.js";
 import { DamageCalculator } from "./damage-calculator.js";
 import { GlobalsProvider } from "./globals-provider.js";
@@ -6,7 +6,7 @@ import { PlayerstatsClient } from "./playerstats-client.js";
 
 // CONFIG.debug.hooks = true
 const damageCalculator = new DamageCalculator();
-const gameCreator = new GameCreator();
+const gameCreator = new GameClient();
 const globalsProvider = new GlobalsProvider();
 const playerstatsClient = new PlayerstatsClient();
 const playerstatsUpdater = new PlayerstatsUpdater(damageCalculator, playerstatsClient, globalsProvider);

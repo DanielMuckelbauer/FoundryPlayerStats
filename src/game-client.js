@@ -1,6 +1,6 @@
 import { statsCollectorUrl } from "../data/endpoints.js";
 
-export class GameCreator {
+export class GameClient {
     postCreateGame(gameId) {
         var requestOptions = { method: 'POST' };
 
