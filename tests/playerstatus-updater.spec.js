@@ -11,12 +11,12 @@ beforeEach(() => {
 });
 
 test('initializes with copy of currently active encounter', () => {
-    const activeInstance = { name: 'name' };
+    const activeCombat = { name: 'name' };
 
-    playerstatsUpdater.initialize(activeInstance);
+    playerstatsUpdater.initialize(activeCombat);
 
-    expect(playerstatsUpdater.copyOfEncounterAtTheBeginningOfTurn)
-        .toEqual(activeInstance);
-    expect(playerstatsUpdater.copyOfEncounterAtTheBeginningOfTurn)
-        .not.toBe(activeInstance);
+    expect(playerstatsUpdater.copyOfLastCombat)
+        .toEqual(activeCombat);
+    expect(playerstatsUpdater.copyOfLastCombat)
+        .not.toBe(activeCombat);
 });

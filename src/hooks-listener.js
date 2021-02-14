@@ -20,5 +20,4 @@ Hooks.on("updateCombat", () => {
 
 Hooks.on("getCombatTrackerEntryContext", () => {
   console.log('getCombatTrackerEntry');
-  //console.log('combatant1', JSON.stringify(CombatEncounters.instance.active.combatant));
 });

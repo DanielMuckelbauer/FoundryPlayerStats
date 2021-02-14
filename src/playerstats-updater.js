@@ -1,35 +1,43 @@
 import cloneDeep from '../node_modules/lodash-es/cloneDeep.js';
 
 export class PlayerstatsUpdater {
-    copyOfEncounterAtTheBeginningOfTurn;
+    copyOfLastCombat;
 
     constructor(damageCalculator) {
         this.damageCalculator = damageCalculator;
     }
 
     initialize(activeCombatInstance) {
-        if (!this.copyOfEncounterAtTheBeginningOfTurn) {
-            this.copyOfEncounterAtTheBeginningOfTurn = cloneDeep(activeCombatInstance);
+        if (!this.copyOfLastCombat) {
+            this.copyOfLastCombat = cloneDeep(activeCombatInstance);
         }
     }
 
-    updatePlayerStats(activeCombatInstance) {
-        const lastCombatant = this.copyOfEncounterAtTheBeginningOfTurn.combatant;
-        const currentCombatant = activeCombatInstance.combatant;
-        if (currentCombatant === lastCombatant) {
+    updatePlayerStats(currentCombat) {
+        if (!this.combatantHasChanged(currentCombat)) {
             return;
         }
-        const damageDealt = this.damageCalculator.calculateDamageDealt(this.copyOfEncounterAtTheBeginningOfTurn, activeCombatInstance);
-        const damageTaken = this.damageCalculator.calculateDamageTaken(this.copyOfEncounterAtTheBeginningOfTurn, activeCombatInstance);
-
-        this.postUpdatedPlayerStats(damageDealt, damageTaken);
-
-        this.copyOfEncounterAtTheBeginningOfTurn = cloneDeep(activeCombatInstance);
+        const damageStats = this.calculateDamageStats(this.copyOfLastCombat, currentCombat);
+        this.sendPlayerStats(damageStats);
+        this.copyOfLastCombat = cloneDeep(currentCombat);
     }
 
-    postUpdatedPlayerStats(damageDealt, damageTaken) {
-        console.log('name', this.copyOfEncounterAtTheBeginningOfTurn.combatant.actor.name);
-        console.log('damageTaken', damageTaken);
-        console.log('damageDealt', damageDealt);
+    
+    combatantHasChanged(activeCombatInstance) {
+        const lastCombatant = this.copyOfLastCombat.combatant;
+        const currentCombatant = activeCombatInstance.combatant;
+        return currentCombatant !== lastCombatant;
+    }
+
+    calculateDamageStats(copyOfLastCombat, activeCombatInstance) {
+        const damageDealt = this.damageCalculator.calculateDamageDealt(copyOfLastCombat, activeCombatInstance);
+        const damageTaken = this.damageCalculator.calculateDamageTaken(copyOfLastCombat, activeCombatInstance);
+        return { damageDealt, damageTaken };
+    }
+
+    sendPlayerStats(damageStats) {
+        console.log('name', this.copyOfLastCombat.combatant.actor.name);
+        console.log('damageTaken', damageStats.damageTaken);
+        console.log('damageDealt', damageStats.damageDealt);
     }
 }
