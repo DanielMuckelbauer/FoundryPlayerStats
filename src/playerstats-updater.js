@@ -1,10 +1,16 @@
 import cloneDeep from '../node_modules/lodash-es/cloneDeep.js';
 
 export class PlayerstatsUpdater {
+    damageCalculator;
+    playerstatsClient;
+    globalsProvider;
+
     copyOfLastCombat;
 
-    constructor(damageCalculator) {
+    constructor(damageCalculator, playerstatsClient, globalsProvider) {
         this.damageCalculator = damageCalculator;
+        this.playerstatsClient = playerstatsClient;
+        this.globalsProvider = globalsProvider;
     }
 
     initialize(activeCombatInstance) {
@@ -18,11 +24,11 @@ export class PlayerstatsUpdater {
             return;
         }
         const damageStats = this.calculateDamageStats(this.copyOfLastCombat, currentCombat);
-        this.postPlayerStats(damageStats, this.copyOfLastCombat.combatant.actor.name);
+        this.putPlayerStats(damageStats, this.copyOfLastCombat.combatant.actor);
         this.copyOfLastCombat = cloneDeep(currentCombat);
     }
 
-    
+
     combatantHasChanged(activeCombatInstance) {
         const lastCombatant = this.copyOfLastCombat.combatant;
         const currentCombatant = activeCombatInstance.combatant;
@@ -35,9 +41,15 @@ export class PlayerstatsUpdater {
         return { damageDealt, damageTaken };
     }
 
-    postPlayerStats(damageStats, combatantName) {
-        console.log('name', combatantName);
-        console.log('damageTaken', damageStats.damageTaken);
-        console.log('damageDealt', damageStats.damageDealt);
+    putPlayerStats(damageStats, combatantActor) {
+        const playerstats = {
+            characterName: combatantActor.name,
+            characterId: combatantActor._id,
+            damageDealt: damageStats.damageDealt,
+            damageTaken: damageStats.damageTaken,
+            gameName: this.globalsProvider.gameName
+        };
+
+        this.playerstatsClient.sendPlayerstats(playerstats);
     }
 }

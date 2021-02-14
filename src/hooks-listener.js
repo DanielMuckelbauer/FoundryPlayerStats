@@ -1,21 +1,24 @@
 import { GameCreator } from "./game-creator.js";
 import { PlayerstatsUpdater } from "./playerstats-updater.js";
 import { DamageCalculator } from "./damage-calculator.js";
-
+import { GlobalsProvider } from "./globals-provider.js";
+import { PlayerstatsClient } from "./playerstats-client.js";
 
 // CONFIG.debug.hooks = true
 const damageCalculator = new DamageCalculator();
 const gameCreator = new GameCreator();
-const playerStatsUpdater = new PlayerstatsUpdater(damageCalculator);
+const globalsProvider = new GlobalsProvider();
+const playerstatsClient = new PlayerstatsClient();
+const playerstatsUpdater = new PlayerstatsUpdater(damageCalculator, playerstatsClient, globalsProvider);
 
 Hooks.on('ready', () => {
   gameCreator.postCreateGame(game.data.world.id);
-  playerStatsUpdater.initialize(CombatEncounters.instance.active);
+  playerstatsUpdater.initialize(CombatEncounters.instance.active);
 });
 
 Hooks.on("updateCombat", () => {
   console.log('updateCombat');
-  playerStatsUpdater.updatePlayerStats(CombatEncounters.instance.active);
+  playerstatsUpdater.updatePlayerStats(CombatEncounters.instance.active);
 });
 
 Hooks.on("getCombatTrackerEntryContext", () => {
