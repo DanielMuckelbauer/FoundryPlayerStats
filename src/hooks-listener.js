@@ -9,7 +9,7 @@ const gameCreator = new GameCreator();
 const playerStatsUpdater = new PlayerstatsUpdater(damageCalculator);
 
 Hooks.on('ready', () => {
-  gameCreator.createGame();
+  gameCreator.postCreateGame(game.data.world.id);
   playerStatsUpdater.initialize(CombatEncounters.instance.active);
 });
 

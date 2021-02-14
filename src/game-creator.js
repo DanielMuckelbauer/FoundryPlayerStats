@@ -1,12 +1,8 @@
 import { statsCollectorUrl } from "../data/endpoints.js";
 
 export class GameCreator {
-    createGame() {
-        const gameId = game.data.world.id;
-
-        var requestOptions = {
-            method: 'POST'
-        };
+    postCreateGame(gameId) {
+        var requestOptions = { method: 'POST' };
 
         fetch(`${statsCollectorUrl}/api/games/${gameId}`, requestOptions)
             .then(response => {

@@ -18,7 +18,7 @@ export class PlayerstatsUpdater {
             return;
         }
         const damageStats = this.calculateDamageStats(this.copyOfLastCombat, currentCombat);
-        this.sendPlayerStats(damageStats);
+        this.postPlayerStats(damageStats);
         this.copyOfLastCombat = cloneDeep(currentCombat);
     }
 
@@ -35,7 +35,7 @@ export class PlayerstatsUpdater {
         return { damageDealt, damageTaken };
     }
 
-    sendPlayerStats(damageStats) {
+    postPlayerStats(damageStats) {
         console.log('name', this.copyOfLastCombat.combatant.actor.name);
         console.log('damageTaken', damageStats.damageTaken);
         console.log('damageDealt', damageStats.damageDealt);
