@@ -19,6 +19,10 @@ export class PlayerstatsUpdater {
         }
     }
 
+    cleanEncounter() {
+        this.copyOfLastCombat = null;
+    }
+
     updatePlayerStats() {
         const currentCombat = this.globalsProvider.activeCombat;
         if (!this.combatantHasChanged(currentCombat)) {
@@ -29,8 +33,10 @@ export class PlayerstatsUpdater {
         this.copyOfLastCombat = cloneDeep(currentCombat);
     }
 
-
     combatantHasChanged(activeCombatInstance) {
+        if (!this.copyOfLastCombat) {
+            return;
+        }
         const lastCombatant = this.copyOfLastCombat.combatant;
         const currentCombatant = activeCombatInstance.combatant;
         return currentCombatant !== lastCombatant;

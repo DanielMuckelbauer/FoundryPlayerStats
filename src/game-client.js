@@ -8,9 +8,9 @@ export class GameClient {
     }
 
     postCreateGame() {
-        const  requestOptions = { method: 'POST' };
-        const gameId = this.globalsProvider.gameId;
-        fetch(`${statsCollectorUrl}/api/games/${gameId}`, requestOptions)
+        const requestOptions = { method: 'POST' };
+        const gameName = this.globalsProvider.gameName;
+        fetch(`${statsCollectorUrl}/api/games/${gameName}`, requestOptions)
             .then(response => {
                 console.log('response', response.json());
             })

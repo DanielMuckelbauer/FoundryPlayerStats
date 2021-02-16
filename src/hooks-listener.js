@@ -4,23 +4,23 @@ import { DamageCalculator } from "./damage-calculator.js";
 import { GlobalsProvider } from "./globals-provider.js";
 import { PlayerstatsClient } from "./playerstats-client.js";
 
-// CONFIG.debug.hooks = true
+// eslint-disable-next-line no-undef
+// CONFIG.debug.hooks = true;
 const damageCalculator = new DamageCalculator();
 const globalsProvider = new GlobalsProvider();
-const gameCreator = new GameClient(globalsProvider);
+const gameClient = new GameClient(globalsProvider);
 const playerstatsClient = new PlayerstatsClient(globalsProvider);
 const playerstatsUpdater = new PlayerstatsUpdater(damageCalculator, playerstatsClient, globalsProvider);
 
 Hooks.on('ready', () => {
-  gameCreator.postCreateGame(game.data.world.id);
-  playerstatsUpdater.initialize(CombatEncounters.instance.active);
+  gameClient.postCreateGame();
 });
 
 Hooks.on("updateCombat", () => {
-  console.log('updateCombat');
+  playerstatsUpdater.initialize(CombatEncounters.instance.active);
   playerstatsUpdater.updatePlayerStats(CombatEncounters.instance.active);
 });
 
-Hooks.on("getCombatTrackerEntryContext", () => {
-  console.log('getCombatTrackerEntry');
+Hooks.on("preDeleteCombat", () => {
+  playerstatsUpdater.cleanEncounter();
 });
