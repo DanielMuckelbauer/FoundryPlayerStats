@@ -1,2 +1,2 @@
-export const statsCollectorUrl = "https://localhost:44385";
+export const statsCollectorUrl = "https://localhost:5001";
 
