@@ -14,7 +14,7 @@ export class PlayerstatsUpdater {
     }
 
     initialize() {
-        if (!this.copyOfLastCombat) {
+        if (!this.copyOfLastCombat?.combatant) {
             this.copyOfLastCombat = cloneDeep(this.globalsProvider.activeCombat);
         }
     }
@@ -25,7 +25,7 @@ export class PlayerstatsUpdater {
 
     updatePlayerStats() {
         const currentCombat = this.globalsProvider.activeCombat;
-        if (!this.combatantHasChanged(currentCombat)) {
+        if (!currentCombat || !this.combatantHasChanged(currentCombat)) {
             return;
         }
         const damageStats = this.calculateDamageStats(this.copyOfLastCombat, currentCombat);

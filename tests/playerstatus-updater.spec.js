@@ -26,6 +26,27 @@ test('initializes with copy of currently active encounter', () => {
     expect(playerstatsUpdater.copyOfLastCombat).not.toBe(activeCombat);
 });
 
+test('overwrites last combat on init if last combat has no combatant', () => {
+    playerstatsUpdater.copyOfLastCombat = { name: 'last combat without combatant property' };
+    const activeCombat = { name: 'name' };
+    jest.spyOn(globalsProvider, 'activeCombat', 'get').mockImplementation(() => activeCombat);
+
+    playerstatsUpdater.initialize();
+
+    expect(playerstatsUpdater.copyOfLastCombat).toEqual(activeCombat);
+    expect(playerstatsUpdater.copyOfLastCombat).not.toBe(activeCombat);
+});
+
+test('does not overwrite last combat on init if it already has a combatant property', () => {
+    playerstatsUpdater.copyOfLastCombat = { combatant: 'last combat with combatant property' };
+    const activeCombat = { name: 'name' };
+    jest.spyOn(globalsProvider, 'activeCombat', 'get').mockImplementation(() => activeCombat);
+
+    playerstatsUpdater.initialize();
+
+    expect(playerstatsUpdater.copyOfLastCombat).toBe(playerstatsUpdater.copyOfLastCombat);
+});
+
 test('stores a copy of the new combat encounter', () => {
     playerstatsUpdater.copyOfLastCombat = {
         combatant: {
@@ -53,7 +74,7 @@ test('does nothing if combatant is the same', () => {
 
     playerstatsUpdater.updatePlayerStats(newCombat);
 
-    expect(playerstatsUpdater.copyOfLastCombat).toEqual(savedCombat);   
+    expect(playerstatsUpdater.copyOfLastCombat).toEqual(savedCombat);
 });
 
 test('calls playerstatsClient with correct object', () => {
