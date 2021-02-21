@@ -6,4 +6,9 @@ export class GlobalsProvider {
     get gameName() {
         return game.data.world.id;
     }
+
+    get selfIsGM() {
+        return Boolean(Users.instance.entries
+            .find(user => user.isGM && user.isSelf));
+    }
 }

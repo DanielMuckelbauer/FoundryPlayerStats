@@ -5,9 +5,10 @@
         "jest": true
     },
     "globals": {
-        "CombatEncounters": "writable",
+        "CombatEncounters": "readonly",
         "game": "readonly",
-        "Hooks": "readonly"
+        "Hooks": "readonly",
+        "Users": "readonly"
     },
     "extends": "eslint:recommended",
     "parserOptions": {
