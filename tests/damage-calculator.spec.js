@@ -49,6 +49,13 @@ test('calculates damage taken', () => {
 
 test('calculates damage dealt', () => {
     const combatLastTurn = {
+        combatant: {
+            actor: {
+                data: {
+                    type: 'character'
+                }
+            }
+        },
         combatants: [
             {
                 actor: {

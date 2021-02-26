@@ -1,54 +1,54 @@
 import { jest } from '@jest/globals';
 import { DamageCalculator } from '../src/damage-calculator';
-import { PlayerstatsUpdater } from '../src/playerstats-updater';
-import { PlayerstatsClient } from '../src/playerstats-client';
+import { PlayerstatsUpdater } from '../src/actorstats-updater';
+import { ActorstatsClient } from '../src/actorstats-client';
 import { GlobalsProvider } from '../src/globals-provider';
 
-let playerstatsUpdater;
+let actorstatsUpdater;
 let damageCalculator;
-let playerstatsClient;
+let actorstatsClient;
 let globalsProvider;
 
 beforeEach(() => {
     damageCalculator = new DamageCalculator();
-    playerstatsClient = new PlayerstatsClient();
+    actorstatsClient = new ActorstatsClient();
     globalsProvider = new GlobalsProvider();
-    playerstatsUpdater = new PlayerstatsUpdater(damageCalculator, playerstatsClient, globalsProvider);
+    actorstatsUpdater = new PlayerstatsUpdater(damageCalculator, actorstatsClient, globalsProvider);
 });
 
 test('initializes with copy of currently active encounter', () => {
     const activeCombat = { name: 'name' };
     jest.spyOn(globalsProvider, 'activeCombat', 'get').mockImplementation(() => activeCombat);
 
-    playerstatsUpdater.initialize();
+    actorstatsUpdater.initialize();
 
-    expect(playerstatsUpdater.copyOfLastCombat).toEqual(activeCombat);
-    expect(playerstatsUpdater.copyOfLastCombat).not.toBe(activeCombat);
+    expect(actorstatsUpdater.copyOfLastCombat).toEqual(activeCombat);
+    expect(actorstatsUpdater.copyOfLastCombat).not.toBe(activeCombat);
 });
 
 test('overwrites last combat on init if last combat has no combatant', () => {
-    playerstatsUpdater.copyOfLastCombat = { name: 'last combat without combatant property' };
+    actorstatsUpdater.copyOfLastCombat = { name: 'last combat without combatant property' };
     const activeCombat = { name: 'name' };
     jest.spyOn(globalsProvider, 'activeCombat', 'get').mockImplementation(() => activeCombat);
 
-    playerstatsUpdater.initialize();
+    actorstatsUpdater.initialize();
 
-    expect(playerstatsUpdater.copyOfLastCombat).toEqual(activeCombat);
-    expect(playerstatsUpdater.copyOfLastCombat).not.toBe(activeCombat);
+    expect(actorstatsUpdater.copyOfLastCombat).toEqual(activeCombat);
+    expect(actorstatsUpdater.copyOfLastCombat).not.toBe(activeCombat);
 });
 
 test('does not overwrite last combat on init if it already has a combatant property', () => {
-    playerstatsUpdater.copyOfLastCombat = { combatant: 'last combat with combatant property' };
+    actorstatsUpdater.copyOfLastCombat = { combatant: 'last combat with combatant property' };
     const activeCombat = { name: 'name' };
     jest.spyOn(globalsProvider, 'activeCombat', 'get').mockImplementation(() => activeCombat);
 
-    playerstatsUpdater.initialize();
+    actorstatsUpdater.initialize();
 
-    expect(playerstatsUpdater.copyOfLastCombat).toBe(playerstatsUpdater.copyOfLastCombat);
+    expect(actorstatsUpdater.copyOfLastCombat).toBe(actorstatsUpdater.copyOfLastCombat);
 });
 
 test('stores a copy of the new combat encounter', () => {
-    playerstatsUpdater.copyOfLastCombat = {
+    actorstatsUpdater.copyOfLastCombat = {
         combatant: {
             actor: { name: 'lastCombatant' }
         }
@@ -58,27 +58,27 @@ test('stores a copy of the new combat encounter', () => {
     jest.spyOn(damageCalculator, 'calculateDamageDealt').mockReturnValue(1);
     jest.spyOn(damageCalculator, 'calculateDamageTaken').mockReturnValue(1);
     jest.spyOn(globalsProvider, 'gameName', 'get').mockReturnValue('gameName');
-    jest.spyOn(playerstatsClient, 'sendPlayerstats').mockImplementation(() => { });
+    jest.spyOn(actorstatsClient, 'sendActorStats').mockImplementation(() => { });
 
-    playerstatsUpdater.updatePlayerStats(newCombat);
+    actorstatsUpdater.updateActorStats(newCombat);
 
-    expect(playerstatsUpdater.copyOfLastCombat).toEqual(newCombat);
-    expect(playerstatsUpdater.copyOfLastCombat).not.toBe(newCombat);
+    expect(actorstatsUpdater.copyOfLastCombat).toEqual(newCombat);
+    expect(actorstatsUpdater.copyOfLastCombat).not.toBe(newCombat);
 });
 
 test('does nothing if combatant is the same', () => {
     const newCombat = { combatant: 'combatant' };
     jest.spyOn(globalsProvider, 'activeCombat', 'get').mockImplementation(() => newCombat);
     const savedCombat = { combatant: 'combatant' };
-    playerstatsUpdater.copyOfLastCombat = savedCombat;
+    actorstatsUpdater.copyOfLastCombat = savedCombat;
 
-    playerstatsUpdater.updatePlayerStats(newCombat);
+    actorstatsUpdater.updateActorStats(newCombat);
 
-    expect(playerstatsUpdater.copyOfLastCombat).toEqual(savedCombat);
+    expect(actorstatsUpdater.copyOfLastCombat).toEqual(savedCombat);
 });
 
-test('calls playerstatsClient with correct object', () => {
-    playerstatsUpdater.copyOfLastCombat = {
+test('calls ActorstatsClient with correct object', () => {
+    actorstatsUpdater.copyOfLastCombat = {
         combatant: {
             actor: { name: 'lastCombatant', _id: 'id' }
         }
@@ -88,11 +88,11 @@ test('calls playerstatsClient with correct object', () => {
     jest.spyOn(damageCalculator, 'calculateDamageDealt').mockReturnValue(2);
     jest.spyOn(damageCalculator, 'calculateDamageTaken').mockReturnValue(1);
     jest.spyOn(globalsProvider, 'gameName', 'get').mockReturnValue('gameName');
-    jest.spyOn(playerstatsClient, 'sendPlayerstats').mockImplementation(() => { });
+    jest.spyOn(actorstatsClient, 'sendActorStats').mockImplementation(() => { });
 
-    playerstatsUpdater.updatePlayerStats(newCombat);
+    actorstatsUpdater.updateActorStats(newCombat);
 
-    expect(playerstatsClient.sendPlayerstats).toHaveBeenCalledWith({
+    expect(actorstatsClient.sendActorStats).toHaveBeenCalledWith({
         characterName: 'lastCombatant',
         characterId: 'id',
         damageDealt: 2,
