@@ -6,7 +6,7 @@ beforeEach(() => {
     damageCalculator = new DamageCalculator();
 });
 
-test('calculates damage taken', () => {
+test('calculates damage taken when last combatant was player', () => {
     const combatLastTurn = {
         combatant: {
             _id: 1,
@@ -47,12 +47,12 @@ test('calculates damage taken', () => {
     expect(damageTaken).toBe(5);
 });
 
-test('calculates damage dealt', () => {
+test('calculates damage dealt when last combatant was character', () => {
     const combatLastTurn = {
         combatant: {
             actor: {
                 data: {
-                    type: 'character'
+                    type: 'npc'
                 }
             }
         },
@@ -67,7 +67,7 @@ test('calculates damage dealt', () => {
                                 }
                             }
                         },
-                        type: 'npc'
+                        type: 'character'
                     }
                 }
             },
@@ -81,7 +81,7 @@ test('calculates damage dealt', () => {
                                 }
                             }
                         },
-                        type: 'npc'
+                        type: 'character'
                     }
                 }
             }
@@ -99,7 +99,7 @@ test('calculates damage dealt', () => {
                                 }
                             }
                         },
-                        type: 'npc'
+                        type: 'character'
                     }
                 }
             },
@@ -113,7 +113,7 @@ test('calculates damage dealt', () => {
                                 }
                             }
                         },
-                        type: 'npc'
+                        type: 'character'
                     }
                 }
             }
@@ -121,6 +121,6 @@ test('calculates damage dealt', () => {
     };
 
     const damageDealt = damageCalculator.calculateDamageDealt(combatLastTurn, currentCombat);
-    
+
     expect(damageDealt).toBe(10);
 });

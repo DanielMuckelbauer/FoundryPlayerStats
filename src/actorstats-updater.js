@@ -56,7 +56,6 @@ export class PlayerstatsUpdater {
             damageTaken: damageStats.damageTaken,
             gameName: this.globalsProvider.gameName
         };
-        console.log(actorstats);
 
         this.actorstatsClient.sendActorStats(actorstats);
     }
