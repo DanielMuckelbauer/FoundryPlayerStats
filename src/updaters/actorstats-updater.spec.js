@@ -1,8 +1,8 @@
 import { jest } from '@jest/globals';
-import { DamageCalculator } from '../src/damage-calculator';
-import { PlayerstatsUpdater } from '../src/actorstats-updater';
-import { ActorstatsClient } from '../src/actorstats-client';
-import { GlobalsProvider } from '../src/globals-provider';
+import { DamageCalculator } from '../calculators/damage-calculator';
+import { PlayerstatsUpdater } from './actorstats-updater';
+import { ActorstatsClient } from '../clients/actorstats-client';
+import { GlobalsProvider } from '../globals-provider';
 
 let actorstatsUpdater;
 let damageCalculator;

@@ -1,8 +1,8 @@
-import { GameClient } from "./game-client.js";
-import { PlayerstatsUpdater } from "./actorstats-updater.js";
-import { DamageCalculator } from "./damage-calculator.js";
+import { GameClient } from "./clients/game-client.js";
+import { ActorstatsClient } from "./clients/actorstats-client.js";
+import { PlayerstatsUpdater } from "./updaters/actorstats-updater.js";
+import { DamageCalculator } from "./calculators/damage-calculator.js";
 import { GlobalsProvider } from "./globals-provider.js";
-import { ActorstatsClient } from "./actorstats-client.js";
 
 // CONFIG.debug.hooks = true;
 const damageCalculator = new DamageCalculator();

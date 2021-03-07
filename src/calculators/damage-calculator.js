@@ -10,7 +10,7 @@ export class DamageCalculator {
         const lastCombatantsCurrentHp = activeCombatEncounter.combatants
             .find(combatant => combatant._id === combatEncounterLastTurn.combatant._id)
             .actor.data.data.attributes.hp.value;
-        const lastCombatantsHpAtBeginningOfHisTurn = combatEncounterLastTurn.combatant
+        const lastCombatantsHpAtBeginningOfHisTurn = combatEncounterLastTurn.combatant 
             .actor.data.data.attributes.hp.value;
         return lastCombatantsHpAtBeginningOfHisTurn - lastCombatantsCurrentHp;
     }
@@ -18,10 +18,10 @@ export class DamageCalculator {
     calculateSumOfHealth(gameState, actorType) {
         const npcCombatants = gameState.combatants
             .filter(combatant => combatant.actor.data.type === actorType);
-        return npcCombatants.reduce((hpSum, npc) => hpSum += npc.actor.data.data.attributes.hp.value, 0);
+            return npcCombatants.reduce((hpSum, npc) => hpSum += npc.actor.data.data.attributes.hp.value, 0);
     }
-
-    getActorTypeOfLastCombatantsEnemy(combatEncounterLastTurn) {
+        
+        getActorTypeOfLastCombatantsEnemy(combatEncounterLastTurn) {
         return combatEncounterLastTurn.combatant.actor.data.type === 'npc'
             ? 'character'
             : 'npc';

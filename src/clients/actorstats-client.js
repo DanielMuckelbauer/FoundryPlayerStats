@@ -1,4 +1,4 @@
-import { statsCollectorUrl } from "../data/endpoints.js";
+import { statsCollectorUrl } from "../../data/endpoints.js";
 
 export class ActorstatsClient {
     globalsProvider;

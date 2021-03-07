@@ -1,4 +1,4 @@
-import { DamageCalculator } from "../src/damage-calculator";
+import { DamageCalculator } from "./damage-calculator";
 
 let damageCalculator;
 
