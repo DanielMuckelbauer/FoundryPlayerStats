@@ -1,9 +1,9 @@
-import { DamageCalculator } from "./damage-calculator";
+import { HealthChangeCalculator } from "./health-change-calculator";
 
-let damageCalculator;
+let healthChangeCalculator;
 
 beforeEach(() => {
-    damageCalculator = new DamageCalculator();
+    healthChangeCalculator = new HealthChangeCalculator();
 });
 
 test('calculates damage taken when last combatant was character', () => {
@@ -44,7 +44,7 @@ test('calculates damage taken when last combatant was character', () => {
         ]
     };
 
-    const damageTaken = damageCalculator.calculateDamageTaken(combatLastTurn, currentCombat);
+    const damageTaken = healthChangeCalculator.calculateDamageTaken(combatLastTurn, currentCombat);
 
     expect(damageTaken).toBe(5);
 });
@@ -122,7 +122,7 @@ test('calculates damage dealt when last combatant was npc', () => {
         ]
     };
 
-    const damageDealt = damageCalculator.calculateDamageDealt(combatLastTurn, currentCombat);
+    const damageDealt = healthChangeCalculator.calculateDamageDealt(combatLastTurn, currentCombat);
 
     expect(damageDealt).toBe(10);
 });
@@ -223,7 +223,7 @@ test('calculates healing done  when last combatant was character', () => {
         ]
     };
 
-    const healingDone = damageCalculator.calculateHealingDone(combatLastTurn, currentCombat);
+    const healingDone = healthChangeCalculator.calculateHealingDone(combatLastTurn, currentCombat);
 
     expect(healingDone).toBe(2);
 });
@@ -324,7 +324,7 @@ test('calculates healing done  when last combatant was npc', () => {
         ]
     };
 
-    const healingDone = damageCalculator.calculateHealingDone(combatLastTurn, currentCombat);
+    const healingDone = healthChangeCalculator.calculateHealingDone(combatLastTurn, currentCombat);
 
     expect(healingDone).toBe(2);
 });

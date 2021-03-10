@@ -1,4 +1,4 @@
-export class DamageCalculator {
+export class HealthChangeCalculator {
     calculateDamageDealt(combatEncounterLastTurn, activeCombatEncounter) {
         const actorTypeOfLastCombatantsEnemy = this.getActorTypeOfLastCombatantsEnemy(combatEncounterLastTurn);
         const sumOfEnemiesHealthAtStartOfTurn = this.calculateActorTypesSumOfHealth(combatEncounterLastTurn.combatants, actorTypeOfLastCombatantsEnemy);

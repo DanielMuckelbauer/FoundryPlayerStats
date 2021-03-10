@@ -1,14 +1,14 @@
 import cloneDeep from '../../node_modules/lodash-es/cloneDeep.js';
 
 export class PlayerstatsUpdater {
-    damageCalculator;
+    healthChangeCalculator;
     actorstatsClient;
     globalsProvider;
 
     copyOfLastCombat;
 
-    constructor(damageCalculator, ActorstatsClient, globalsProvider) {
-        this.damageCalculator = damageCalculator;
+    constructor(healthChangeCalculator, ActorstatsClient, globalsProvider) {
+        this.healthChangeCalculator = healthChangeCalculator;
         this.actorstatsClient = ActorstatsClient;
         this.globalsProvider = globalsProvider;
     }
@@ -43,8 +43,8 @@ export class PlayerstatsUpdater {
     }
 
     calculateDamageStats(copyOfLastCombat, activeCombatInstance) {
-        const damageDealt = this.damageCalculator.calculateDamageDealt(copyOfLastCombat, activeCombatInstance);
-        const damageTaken = this.damageCalculator.calculateDamageTaken(copyOfLastCombat, activeCombatInstance);
+        const damageDealt = this.healthChangeCalculator.calculateDamageDealt(copyOfLastCombat, activeCombatInstance);
+        const damageTaken = this.healthChangeCalculator.calculateDamageTaken(copyOfLastCombat, activeCombatInstance);
         return { damageDealt, damageTaken };
     }
 

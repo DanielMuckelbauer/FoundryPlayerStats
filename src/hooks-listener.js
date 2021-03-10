@@ -1,15 +1,15 @@
 import { GameClient } from "./clients/game-client.js";
 import { ActorstatsClient } from "./clients/actorstats-client.js";
 import { PlayerstatsUpdater } from "./updaters/actorstats-updater.js";
-import { DamageCalculator } from "./calculators/damage-calculator.js";
+import { HealthChangeCalculator } from "./calculators/health-change-calculator.js";
 import { GlobalsProvider } from "./globals-provider.js";
 
 // CONFIG.debug.hooks = true;
-const damageCalculator = new DamageCalculator();
+const healthChangeCalculator = new HealthChangeCalculator();
 const globalsProvider = new GlobalsProvider();
 const gameClient = new GameClient(globalsProvider);
 const actorstatsClient = new ActorstatsClient(globalsProvider);
-const actorstatsUpdater = new PlayerstatsUpdater(damageCalculator, actorstatsClient, globalsProvider);
+const actorstatsUpdater = new PlayerstatsUpdater(healthChangeCalculator, actorstatsClient, globalsProvider);
 
 Hooks.on('ready', () => {
   if (!globalsProvider.selfIsGM) {

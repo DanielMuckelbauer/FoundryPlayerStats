@@ -1,19 +1,19 @@
 import { jest } from '@jest/globals';
-import { DamageCalculator } from '../calculators/damage-calculator';
+import { HealthChangeCalculator } from '../calculators/health-change-calculator';
 import { PlayerstatsUpdater } from './actorstats-updater';
 import { ActorstatsClient } from '../clients/actorstats-client';
 import { GlobalsProvider } from '../globals-provider';
 
 let actorstatsUpdater;
-let damageCalculator;
+let healthChangeCalculator;
 let actorstatsClient;
 let globalsProvider;
 
 beforeEach(() => {
-    damageCalculator = new DamageCalculator();
+    healthChangeCalculator = new HealthChangeCalculator();
     actorstatsClient = new ActorstatsClient();
     globalsProvider = new GlobalsProvider();
-    actorstatsUpdater = new PlayerstatsUpdater(damageCalculator, actorstatsClient, globalsProvider);
+    actorstatsUpdater = new PlayerstatsUpdater(healthChangeCalculator, actorstatsClient, globalsProvider);
 });
 
 test('initializes with copy of currently active encounter', () => {
@@ -55,8 +55,8 @@ test('stores a copy of the new combat encounter', () => {
     };
     const newCombat = { combatant: 'newCombatant' };
     jest.spyOn(globalsProvider, 'activeCombat', 'get').mockImplementation(() => newCombat);
-    jest.spyOn(damageCalculator, 'calculateDamageDealt').mockReturnValue(1);
-    jest.spyOn(damageCalculator, 'calculateDamageTaken').mockReturnValue(1);
+    jest.spyOn(healthChangeCalculator, 'calculateDamageDealt').mockReturnValue(1);
+    jest.spyOn(healthChangeCalculator, 'calculateDamageTaken').mockReturnValue(1);
     jest.spyOn(globalsProvider, 'gameName', 'get').mockReturnValue('gameName');
     jest.spyOn(actorstatsClient, 'sendActorStats').mockImplementation(() => { });
 
@@ -85,8 +85,8 @@ test('calls ActorstatsClient with correct object', () => {
     };
     const newCombat = { combatant: 'newCombatant' };
     jest.spyOn(globalsProvider, 'activeCombat', 'get').mockImplementation(() => newCombat);
-    jest.spyOn(damageCalculator, 'calculateDamageDealt').mockReturnValue(2);
-    jest.spyOn(damageCalculator, 'calculateDamageTaken').mockReturnValue(1);
+    jest.spyOn(healthChangeCalculator, 'calculateDamageDealt').mockReturnValue(2);
+    jest.spyOn(healthChangeCalculator, 'calculateDamageTaken').mockReturnValue(1);
     jest.spyOn(globalsProvider, 'gameName', 'get').mockReturnValue('gameName');
     jest.spyOn(actorstatsClient, 'sendActorStats').mockImplementation(() => { });
 
