@@ -3,7 +3,7 @@ export class HealthChangeCalculator {
         const actorTypeOfLastCombatantsEnemy = this.getActorTypeOfLastCombatantsEnemy(combatEncounterLastTurn);
         const sumOfEnemiesHealthAtStartOfTurn = this.calculateActorTypesSumOfHealth(combatEncounterLastTurn.combatants, actorTypeOfLastCombatantsEnemy);
         const sumOfEnemiesHealthAtEndOfTurn = this.calculateActorTypesSumOfHealth(activeCombatEncounter.combatants, actorTypeOfLastCombatantsEnemy);
-        return sumOfEnemiesHealthAtStartOfTurn - sumOfEnemiesHealthAtEndOfTurn;
+        return this.differenceOrZero(sumOfEnemiesHealthAtStartOfTurn, sumOfEnemiesHealthAtEndOfTurn);
     }
 
     calculateDamageTaken(combatEncounterLastTurn, activeCombatEncounter) {
@@ -12,17 +12,14 @@ export class HealthChangeCalculator {
             .actor.data.data.attributes.hp.value;
         const lastCombatantsHpAtBeginningOfHisTurn = combatEncounterLastTurn.combatant
             .actor.data.data.attributes.hp.value;
-        return lastCombatantsHpAtBeginningOfHisTurn - lastCombatantsCurrentHp;
+        return this.differenceOrZero(lastCombatantsHpAtBeginningOfHisTurn, lastCombatantsCurrentHp);
     }
 
     calculateHealingDone(combatEncounterLastTurn, activeCombatEncounter) {
         const actorTypeOfLastCombatant = combatEncounterLastTurn.combatant.actor.data.type;
         const sumOfAlliesHealthAtStartOfTurn = this.calculateActorTypesSumOfHealth(combatEncounterLastTurn.combatants, actorTypeOfLastCombatant);
         const sumOfAlliesHealthAtEndOfTurn = this.calculateActorTypesSumOfHealth(activeCombatEncounter.combatants, actorTypeOfLastCombatant);
-        const difference = sumOfAlliesHealthAtEndOfTurn - sumOfAlliesHealthAtStartOfTurn;
-        return difference > 0
-            ? difference
-            : 0;
+        return this.differenceOrZero(sumOfAlliesHealthAtEndOfTurn, sumOfAlliesHealthAtStartOfTurn);
     }
 
     calculateActorTypesSumOfHealth(combatants, actorType) {
@@ -35,5 +32,12 @@ export class HealthChangeCalculator {
         return combatEncounterLastTurn.combatant.actor.data.type === 'npc'
             ? 'character'
             : 'npc';
+    }
+
+    differenceOrZero(supposedBiggerNumber, supposedSmallerNumber) {
+        const difference = supposedBiggerNumber - supposedSmallerNumber;
+        return difference > 0
+            ? difference
+            : 0;
     }
 }
