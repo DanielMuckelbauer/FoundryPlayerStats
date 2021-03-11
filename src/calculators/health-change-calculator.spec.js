@@ -129,26 +129,12 @@ test('calculates damage dealt when last combatant was npc', () => {
 
 test('calculates healing done  when last combatant was character', () => {
     const combatLastTurn = {
-        combatant: {
-            _id: 1,
-            actor: {
-                type: 'character',
-                data: {
-                    data: {
-                        attributes: {
-                            hp: {
-                                value: 1
-                            }
-                        }
-                    }
-                }
-            }
-        },
+        combatant: { _id: 1, actor: { data: { type: 'character' } } },
         combatants: [
             {
                 actor: {
-                type: 'character',
                     data: {
+                        type: 'character',
                         data: {
                             attributes: {
                                 hp: {
@@ -161,8 +147,22 @@ test('calculates healing done  when last combatant was character', () => {
             },
             {
                 actor: {
-                type: 'npc',
                     data: {
+                        type: 'character',
+                        data: {
+                            attributes: {
+                                hp: {
+                                    value: 1
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                actor: {
+                    data: {
+                        type: 'npc',
                         data: {
                             attributes: {
                                 hp: {
@@ -176,26 +176,12 @@ test('calculates healing done  when last combatant was character', () => {
         ]
     };
     const currentCombat = {
-        combatant: {
-            _id: 1,
-            actor: {
-                type: 'character',
-                data: {
-                    data: {
-                        attributes: {
-                            hp: {
-                                value: 2
-                            }
-                        }
-                    }
-                }
-            }
-        },
+        combatant: { _id: 1, actor: { data: { type: 'character' } } },
         combatants: [
             {
                 actor: {
-                type: 'character',
                     data: {
+                        type: 'character',
                         data: {
                             attributes: {
                                 hp: {
@@ -208,8 +194,22 @@ test('calculates healing done  when last combatant was character', () => {
             },
             {
                 actor: {
-                type: 'npc',
                     data: {
+                        type: 'character',
+                        data: {
+                            attributes: {
+                                hp: {
+                                    value: 2
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                actor: {
+                    data: {
+                        type: 'npc',
                         data: {
                             attributes: {
                                 hp: {
@@ -230,26 +230,27 @@ test('calculates healing done  when last combatant was character', () => {
 
 test('calculates healing done  when last combatant was npc', () => {
     const combatLastTurn = {
-        combatant: {
-            _id: 1,
-            actor: {
-                type: 'npc',
-                data: {
+        combatant: { actor: { data: { type: 'npc' } } },
+        combatants: [
+            {
+                actor: {
                     data: {
-                        attributes: {
-                            hp: {
-                                value: 1
+                        type: 'npc',
+                        data: {
+                            attributes: {
+                                hp: {
+                                    value: 1
+                                }
                             }
                         }
                     }
                 }
-            }
-        },
-        combatants: [
+            },
             {
+                _id: 1,
                 actor: {
-                type: 'npc',
                     data: {
+                        type: 'npc',
                         data: {
                             attributes: {
                                 hp: {
@@ -262,8 +263,8 @@ test('calculates healing done  when last combatant was npc', () => {
             },
             {
                 actor: {
-                type: 'character',
                     data: {
+                        type: 'character',
                         data: {
                             attributes: {
                                 hp: {
@@ -277,26 +278,13 @@ test('calculates healing done  when last combatant was npc', () => {
         ]
     };
     const currentCombat = {
-        combatant: {
-            _id: 1,
-            actor: {
-                type: 'npc',
-                data: {
-                    data: {
-                        attributes: {
-                            hp: {
-                                value: 2
-                            }
-                        }
-                    }
-                }
-            }
-        },
+        combatant: { actor: { data: { type: 'npc' } } },
         combatants: [
             {
+                _id: 1,
                 actor: {
-                type: 'npc',
                     data: {
+                        type: 'npc',
                         data: {
                             attributes: {
                                 hp: {
@@ -309,8 +297,22 @@ test('calculates healing done  when last combatant was npc', () => {
             },
             {
                 actor: {
-                type: 'character',
                     data: {
+                        type: 'npc',
+                        data: {
+                            attributes: {
+                                hp: {
+                                    value: 2
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                actor: {
+                    data: {
+                        type: 'character',
                         data: {
                             attributes: {
                                 hp: {

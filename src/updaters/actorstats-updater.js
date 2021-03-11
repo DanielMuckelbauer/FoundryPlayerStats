@@ -28,8 +28,8 @@ export class PlayerstatsUpdater {
         if (!currentCombat || !this.combatantHasChanged(currentCombat)) {
             return;
         }
-        const damageStats = this.calculateDamageStats(this.copyOfLastCombat, currentCombat);
-        this.putActorStats(damageStats, this.copyOfLastCombat.combatant.actor);
+        const healthStats = this.calculateHealthStats(this.copyOfLastCombat, currentCombat);
+        this.putActorStats(healthStats, this.copyOfLastCombat.combatant.actor);
         this.copyOfLastCombat = cloneDeep(currentCombat);
     }
 
@@ -42,18 +42,20 @@ export class PlayerstatsUpdater {
         return currentCombatant !== lastCombatant;
     }
 
-    calculateDamageStats(copyOfLastCombat, activeCombatInstance) {
+    calculateHealthStats(copyOfLastCombat, activeCombatInstance) {
         const damageDealt = this.healthChangeCalculator.calculateDamageDealt(copyOfLastCombat, activeCombatInstance);
         const damageTaken = this.healthChangeCalculator.calculateDamageTaken(copyOfLastCombat, activeCombatInstance);
-        return { damageDealt, damageTaken };
+        const healingDone = this.healthChangeCalculator.calculateHealingDone(copyOfLastCombat, activeCombatInstance);
+        return { damageDealt, damageTaken, healingDone };
     }
 
-    putActorStats(damageStats, combatantActor) {
+    putActorStats(healthStats, combatantActor) {
         const actorstats = {
             characterName: combatantActor.name,
             characterId: combatantActor._id,
-            damageDealt: damageStats.damageDealt,
-            damageTaken: damageStats.damageTaken,
+            damageDealt: healthStats.damageDealt,
+            damageTaken: healthStats.damageTaken,
+            healingDone: healthStats.healingDone,
             gameName: this.globalsProvider.gameName
         };
 

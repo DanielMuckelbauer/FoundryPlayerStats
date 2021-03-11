@@ -57,6 +57,7 @@ test('stores a copy of the new combat encounter', () => {
     jest.spyOn(globalsProvider, 'activeCombat', 'get').mockImplementation(() => newCombat);
     jest.spyOn(healthChangeCalculator, 'calculateDamageDealt').mockReturnValue(1);
     jest.spyOn(healthChangeCalculator, 'calculateDamageTaken').mockReturnValue(1);
+    jest.spyOn(healthChangeCalculator, 'calculateHealingDone').mockReturnValue(1);
     jest.spyOn(globalsProvider, 'gameName', 'get').mockReturnValue('gameName');
     jest.spyOn(actorstatsClient, 'sendActorStats').mockImplementation(() => { });
 
@@ -87,6 +88,7 @@ test('calls ActorstatsClient with correct object', () => {
     jest.spyOn(globalsProvider, 'activeCombat', 'get').mockImplementation(() => newCombat);
     jest.spyOn(healthChangeCalculator, 'calculateDamageDealt').mockReturnValue(2);
     jest.spyOn(healthChangeCalculator, 'calculateDamageTaken').mockReturnValue(1);
+    jest.spyOn(healthChangeCalculator, 'calculateHealingDone').mockReturnValue(5);
     jest.spyOn(globalsProvider, 'gameName', 'get').mockReturnValue('gameName');
     jest.spyOn(actorstatsClient, 'sendActorStats').mockImplementation(() => { });
 
@@ -97,6 +99,7 @@ test('calls ActorstatsClient with correct object', () => {
         characterId: 'id',
         damageDealt: 2,
         damageTaken: 1,
+        healingDone: 5,
         gameName: 'gameName'
     });
 });

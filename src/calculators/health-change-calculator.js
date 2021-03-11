@@ -17,10 +17,9 @@ export class HealthChangeCalculator {
 
     calculateHealingDone(combatEncounterLastTurn, activeCombatEncounter) {
         const actorTypeOfLastCombatant = combatEncounterLastTurn.combatant.actor.data.type;
-        const healthOfActiveCombatant = combatEncounterLastTurn.combatant.actor.data.data.attributes.hp.value;
         const sumOfAlliesHealthAtStartOfTurn = this.calculateActorTypesSumOfHealth(combatEncounterLastTurn.combatants, actorTypeOfLastCombatant);
         const sumOfAlliesHealthAtEndOfTurn = this.calculateActorTypesSumOfHealth(activeCombatEncounter.combatants, actorTypeOfLastCombatant);
-        const difference = sumOfAlliesHealthAtEndOfTurn + healthOfActiveCombatant - sumOfAlliesHealthAtStartOfTurn;
+        const difference = sumOfAlliesHealthAtEndOfTurn - sumOfAlliesHealthAtStartOfTurn;
         return difference > 0
             ? difference
             : 0;
