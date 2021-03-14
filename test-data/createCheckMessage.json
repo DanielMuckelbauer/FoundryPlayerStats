@@ -1,0 +1,32 @@
+[
+  {
+    "flags": {
+      "dnd5e": {
+        "roll": {
+          "type": "damage",
+          "itemId": "1ZL4kqlospERrimN"
+        }
+      }
+    },
+    "type": 5,
+    "user": "kBTmFuWzwEVmey9R",
+    "timestamp": 1615754996967,
+    "flavor": "New Weapon - Damage Roll (Bludgeoning)",
+    "content": "4",
+    "speaker": {
+      "scene": "CZUqN3uSbHzEAEVV",
+      "actor": "mRnnkAe6aTbLnnk6",
+      "token": "uKZ8tn1SM9zZFEqG",
+      "alias": "Player1"
+    },
+    "whisper": [],
+    "roll": "{\"class\":\"Roll\",\"dice\":[],\"formula\":\"1d4\",\"terms\":[{\"class\":\"Die\",\"number\":1,\"faces\":4,\"modifiers\":[],\"options\":{},\"results\":[{\"result\":4,\"active\":true}]}],\"results\":[4],\"total\":4}",
+    "sound": "sounds/dice.wav",
+    "_id": "oSimEpkKemJDRKeb"
+  },
+  {
+    "temporary": false,
+    "renderSheet": false
+  },
+  "kBTmFuWzwEVmey9R"
+]

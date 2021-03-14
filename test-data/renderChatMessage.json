@@ -1,0 +1,86 @@
+[
+  {
+    "flags": {
+      "dnd5e": {
+        "roll": {
+          "type": "damage",
+          "itemId": "1ZL4kqlospERrimN"
+        }
+      }
+    },
+    "type": 5,
+    "user": "kBTmFuWzwEVmey9R",
+    "timestamp": 1615754996967,
+    "flavor": "New Weapon - Damage Roll (Bludgeoning)",
+    "content": "4",
+    "speaker": {
+      "scene": "CZUqN3uSbHzEAEVV",
+      "actor": "mRnnkAe6aTbLnnk6",
+      "token": "uKZ8tn1SM9zZFEqG",
+      "alias": "Player1"
+    },
+    "whisper": [],
+    "roll": "{\"class\":\"Roll\",\"dice\":[],\"formula\":\"1d4\",\"terms\":[{\"class\":\"Die\",\"number\":1,\"faces\":4,\"modifiers\":[],\"options\":{},\"results\":[{\"result\":4,\"active\":true}]}],\"results\":[4],\"total\":4}",
+    "sound": "sounds/dice.wav",
+    "_id": "oSimEpkKemJDRKeb"
+  },
+  {
+    "0": {},
+    "length": 1
+  },
+  {
+    "message": {
+      "flags": {
+        "dnd5e": {
+          "roll": {
+            "type": "damage",
+            "itemId": "1ZL4kqlospERrimN"
+          }
+        }
+      },
+      "type": 5,
+      "user": "kBTmFuWzwEVmey9R",
+      "timestamp": 1615754996967,
+      "flavor": "New Weapon - Damage Roll (Bludgeoning)",
+      "content": "<div class=\"dice-roll\">\r\n    <div class=\"dice-result\">\r\n        <div class=\"dice-formula\">1d4</div>\r\n        <div class=\"dice-tooltip\">\r\n    <section class=\"tooltip-part\">\r\n        <div class=\"dice\">\r\n            <header class=\"part-header flexrow\">\r\n                <span class=\"part-formula\">1d4</span>\r\n                \r\n                <span class=\"part-total\">4</span>\r\n            </header>\r\n            <ol class=\"dice-rolls\">\r\n                <li class=\"roll die d4 max\">4</li>\r\n            </ol>\r\n        </div>\r\n    </section>\r\n</div>\r\n\r\n        <h4 class=\"dice-total\">4</h4>\r\n    </div>\r\n</div>\r\n",
+      "speaker": {
+        "scene": "CZUqN3uSbHzEAEVV",
+        "actor": "mRnnkAe6aTbLnnk6",
+        "token": "uKZ8tn1SM9zZFEqG",
+        "alias": "Player1"
+      },
+      "whisper": [],
+      "roll": "{\"class\":\"Roll\",\"dice\":[],\"formula\":\"1d4\",\"terms\":[{\"class\":\"Die\",\"number\":1,\"faces\":4,\"modifiers\":[],\"options\":{},\"results\":[{\"result\":4,\"active\":true}]}],\"results\":[4],\"total\":4}",
+      "sound": "sounds/dice.wav",
+      "_id": "oSimEpkKemJDRKeb"
+    },
+    "user": {
+      "_id": "kBTmFuWzwEVmey9R",
+      "name": "Gamemaster",
+      "flags": {},
+      "role": 4,
+      "permissions": {},
+      "password": "",
+      "color": "#28cc32",
+      "hotbar": {},
+      "active": false,
+      "viewedScene": null
+    },
+    "author": {
+      "_id": "kBTmFuWzwEVmey9R",
+      "name": "Gamemaster",
+      "flags": {},
+      "role": 4,
+      "permissions": {},
+      "password": "",
+      "color": "#28cc32",
+      "hotbar": {},
+      "active": false,
+      "viewedScene": null
+    },
+    "alias": "Player1",
+    "cssClass": "",
+    "isWhisper": false,
+    "whisperTo": ""
+  }
+]
