@@ -1,5 +1,3 @@
-import cloneDeep from '../../node_modules/lodash-es/cloneDeep.js';
-
 export class PlayerstatsUpdater {
     healthChangeCalculator;
     actorstatsClient;
@@ -15,7 +13,7 @@ export class PlayerstatsUpdater {
 
     initialize() {
         if (!this.copyOfLastCombat?.combatant) {
-            this.copyOfLastCombat = cloneDeep(this.globalsProvider.activeCombat);
+            this.copyOfLastCombat = this.copyCombat(this.globalsProvider.activeCombat);
         }
     }
 
@@ -29,8 +27,8 @@ export class PlayerstatsUpdater {
             return;
         }
         const healthStats = this.calculateHealthStats(this.copyOfLastCombat, currentCombat);
-        this.putActorStats(healthStats, this.copyOfLastCombat.combatant.actor);
-        this.copyOfLastCombat = cloneDeep(currentCombat);
+        this.putActorStats(healthStats, this.copyOfLastCombat.combatant);
+        this.copyOfLastCombat = this.copyCombat(currentCombat);
     }
 
     combatantHasChanged(activeCombatInstance) {
@@ -49,10 +47,10 @@ export class PlayerstatsUpdater {
         return { damageDealt, damageTaken, healingDone };
     }
 
-    putActorStats(healthStats, combatantActor) {
+    putActorStats(healthStats, combatant) {
         const actorstats = {
-            characterName: combatantActor.name,
-            characterId: combatantActor._id,
+            characterName: combatant.name,
+            characterId: combatant._id,
             damageDealt: healthStats.damageDealt,
             damageTaken: healthStats.damageTaken,
             healingDone: healthStats.healingDone,
@@ -60,5 +58,20 @@ export class PlayerstatsUpdater {
         };
 
         this.actorstatsClient.sendActorStats(actorstats);
+    }
+
+    copyCombat(combat) {
+        const currentCombatant = {
+            id: combat.combatant.actor._id,
+            name: combat.combatant.actor.name,
+            health: combat.combatant.actor.data.data.attributes.hp.value,
+            type: combat.combatant.actor.data.type
+        };
+        const otherCombatants = combat.combatants.map(combatant => ({
+            id: combatant.actor._id,
+            name: combatant.actor.name,
+            health: combatant.actor.data.attributes.hp.value,
+        }));
+        return { currentCombatant, otherCombatants };
     }
 }
